@@ -3,13 +3,24 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@storybook/addon-backgrounds": "^5.2.1",
+    "@storybook/addon-knobs": "^5.2.1",
+    "@storybook/react": "^5.2.1",
+    "@testing-library/react": "^9.3.0",
     "@types/jest": "24.0.18",
     "@types/node": "12.7.11",
     "@types/react": "16.9.5",
     "@types/react-dom": "16.9.1",
+    "@types/storybook-addon-jsx": "^5.4.3",
+    "@types/styled-components": "^4.1.19",
+    "create-component-app": "^1.7.0",
+    "jest-styled-components": "^6.3.3",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-scripts": "3.2.0",
+    "storybook": "^5.1.11",
+    "storybook-addon-jsx": "^7.1.6",
+    "styled-components": "^4.4.0",
     "typescript": "3.6.3"
   },
   "scripts": {
@@ -17,7 +28,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint \"./**/*.{js,ts,tsx}\" --fix"
+    "lint": "eslint \"./**/*.{js,ts,tsx}\" --fix",
+    "create:component": "create-component-app --template netsites",
+    "storybook": "start-storybook -s ./"
   },
   "husky": {
     "hooks": {
@@ -41,9 +54,14 @@
     ]
   },
   "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@types/storybook__react": "^4.0.2",
+    "@typescript-eslint/parser": "^2.3.2",
+    "babel-loader": "^8.0.6",
     "eslint": "^6.5.1",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.3.0",
+    "eslint-import-resolver-typescript": "^1.1.1",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prettier": "^3.1.1",
@@ -51,7 +69,8 @@
     "eslint-plugin-react-hooks": "^2.1.2",
     "husky": ">=1",
     "lint-staged": ">=8",
-    "pretty-quick": "^1.11.1"
+    "pretty-quick": "^1.11.1",
+    "react-docgen-typescript-loader": "^3.3.0"
   },
   "lint-staged": {
     "*.{js,ts,tsx}": [
