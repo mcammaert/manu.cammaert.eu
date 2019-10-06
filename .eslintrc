@@ -1,6 +1,14 @@
 {
-  "extends": ["airbnb", "prettier", "prettier/react"],
-  "plugins": ["prettier", "react-hooks", "import"],
+  "extends": [
+    "airbnb",
+    "prettier",
+    "prettier/react",
+    "plugin:@typescript-eslint/recommended", // Uses the recommended rules from the @typescript-eslint/eslint-plugin
+    "prettier/@typescript-eslint", // Uses eslint-config-prettier to disable ESLint rules from @typescript-eslint/eslint-plugin that would conflict with prettier
+    "plugin:prettier/recommended", // Enables eslint-plugin-prettier and eslint-config-prettier. This will display prettier errors as ESLint errors. Make sure this is always the last configuration in the extends array.
+    "plugin:testing-library/react"
+  ],
+  "plugins": ["prettier", "react-hooks", "import", "testing-library"],
   "rules": {
     "react/jsx-filename-extension": [
       1,
@@ -15,7 +23,10 @@
     "@typescript-eslint/explicit-function-return-type": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
-    "import/no-unresolved": "error"
+    "import/no-unresolved": "error",
+    "testing-library/await-async-query": "error",
+    "testing-library/no-await-sync-query": "error",
+    "testing-library/no-debug": "warn"
   },
   "globals": {
     "window": true,
@@ -27,7 +38,7 @@
     "navigator": true,
     "it": true
   },
-  "parser": "babel-eslint",
+  "parser": "@typescript-eslint/parser",
   "settings": {
     "import/resolver": {
       "node": {
@@ -41,5 +52,13 @@
     "import/parsers": {
       "@typescript-eslint/parser": [".ts", ".tsx"]
     }
-  }
+  },
+  "overrides": [
+    {
+      "files": ["**/*.test.ts", "**/*.test.tsx"],
+      "env": {
+        "jest": true
+      }
+    }
+  ]
 }
