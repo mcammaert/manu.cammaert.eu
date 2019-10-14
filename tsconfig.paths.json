@@ -4,6 +4,7 @@
     "paths": {
       "components/*": ["components/*"],
       "hooks/*": ["hooks/*"],
+      "data/*": ["data/*"],
       "testing/*": ["../testing/*"]
     }
   }
