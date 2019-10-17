@@ -2,6 +2,7 @@ import React from 'react';
 
 import { cleanup } from '@testing-library/react';
 import 'jest-styled-components';
+import styled from 'styled-components';
 
 import { renderComponent } from 'testing/react-testing-library';
 
