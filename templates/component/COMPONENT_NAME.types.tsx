@@ -1,3 +1,3 @@
-export interface ICOMPONENT_NAMEProps {}
+export interface COMPONENT_NAMEProps {}
 
-export interface ICOMPONENT_NAMEContainerProps {}
+export interface COMPONENT_NAMEContainerProps {}
