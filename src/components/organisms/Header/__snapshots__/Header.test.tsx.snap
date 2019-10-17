@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header default props should match the snapshot 1`] = `
+<div>
+  <div
+    class=""
+  >
+    Header
+    <ul
+      class=""
+    >
+      <li>
+        <a
+          href="/"
+        >
+          Home
+        </a>
+      </li>
+      <li>
+        <a
+          href="/cv"
+        >
+          Curriculum Vitae
+        </a>
+      </li>
+      <li>
+        <a
+          href="/contact"
+        >
+          Contact
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;

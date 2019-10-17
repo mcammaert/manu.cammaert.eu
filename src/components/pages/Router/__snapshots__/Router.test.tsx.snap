@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Router default props should match the snapshot 1`] = `
+.c0 {
+  position: absolute;
+}
+
+<div>
+  <div
+    class=""
+  >
+    <div
+      class=""
+    >
+      Header
+      <ul
+        class=""
+      >
+        <li>
+          <a
+            href="/"
+          >
+            Home
+          </a>
+        </li>
+        <li>
+          <a
+            href="/cv"
+          >
+            Curriculum Vitae
+          </a>
+        </li>
+        <li>
+          <a
+            href="/contact"
+          >
+            Contact
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div
+      style="opacity: 0; transform: translate3d(100px, 0, 0);"
+    >
+      <div
+        class="c0"
+      >
+        <p>
+          Laden...
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;

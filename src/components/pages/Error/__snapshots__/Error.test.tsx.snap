@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Error default props should match the snapshot 1`] = `
+<div>
+  <div
+    class=""
+  >
+    <p>
+      Error
+    </p>
+  </div>
+</div>
+`;

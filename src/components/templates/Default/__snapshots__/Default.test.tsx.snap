@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Default default props should match the snapshot 1`] = `
+.c0 {
+  position: absolute;
+}
+
+<div>
+  <div
+    class=""
+  >
+    <div
+      class="c0"
+    >
+      Footer
+    </div>
+  </div>
+</div>
+`;
