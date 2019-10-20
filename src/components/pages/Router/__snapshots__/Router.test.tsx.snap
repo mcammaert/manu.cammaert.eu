@@ -12,7 +12,9 @@ exports[`Router default props should match the snapshot 1`] = `
     <div
       class=""
     >
-      Header
+      <h1>
+        Manu Cammaert
+      </h1>
       <ul
         class=""
       >

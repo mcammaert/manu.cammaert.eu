@@ -8,7 +8,7 @@ import S from './Header.style';
 
 const Header: React.FC<HeaderProps> = () => (
   <S.Header>
-    Header
+    <h1>Manu Cammaert</h1>
     <Navigation />
   </S.Header>
 );
