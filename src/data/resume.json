@@ -1,0 +1,390 @@
+{
+  "personal": {
+    "name": "Manu Cammaert",
+    "nationality": "Belg",
+    "birthDate": "1976-02-16",
+    "address": "Bormte 156, 9190 Stekene, België",
+    "email": "manu@cammaert.eu"
+  },
+  "skills": [
+    "Front-end design/development",
+    "Back-end development",
+    "UI design",
+    "fotografie",
+    "Grafische vormgeving",
+    "Print productie",
+    "Desktop publishing"
+  ],
+  "technical": ["ReactJS", "JavaScript", "PHP", "CakePHP", "MySQL", "Quartz Composer", "OOP", "AWS", "React Native", "Symfony"],
+  "software": ["Adobe Creative Suite", "Sketch", "Postman", "XCode"],
+  "education": [
+    "Architecturale Kunsten, KSI Sint-Lucas, Gent",
+    "Fotografie, Academie voor Schone Kunsten, Sint-Niklaas",
+    "Animator, hoofdanimator en instructeur, Jeugdvakanties Duinen-Heide vzw"
+  ],
+  "training": ["Color management, Adobe"],
+  "languages": [
+    {
+      "language": "Nederlands",
+      "speaking": 1,
+      "writing": 1,
+      "native": true
+    },
+    {
+      "language": "Engels",
+      "speaking": 0.8,
+      "writing": 0.8,
+      "native": false
+    },
+    {
+      "language": "Frans",
+      "speaking": 0.4,
+      "writing": 0.2,
+      "native": false
+    },
+    {
+      "language": "Duits",
+      "speaking": 0.4,
+      "writing": 0,
+      "native": false
+    }
+  ],
+  "hobbies": ["Duiken", "Skiën", "Fotograferen", "Knutselen met electronica, Arduino"],
+  "career": [
+    {
+      "client": "Cammaert Design",
+      "description": "Ontwerp, opmaak en drukklaar maken van boeken, tijdschriften, affiches, folders, verpakkingen, advertenties, illustraties…\nOntwerpen logo’s, pictogrammen…",
+      "startDate": "1996-12-01",
+      "endDate": "2000-01-01",
+      "roles": ["Grafisch Vormgever", "Front-end Designer"],
+      "projects": [
+        { "name": "Bank J. Van Breda & C°" },
+        { "name": "Batoo" },
+        { "name": "Ced Samsom" },
+        { "name": "Combori" },
+        { "name": "Mim uitgeverij" },
+        { "name": "Stafford-Miller" },
+        { "name": "Standaard Uitgeverij" },
+        { "name": "Wolters-Kluwer" }
+      ]
+    },
+    {
+      "client": "Freelance",
+      "description": "Aanmaak van websites, multimediaprojecten, fotograferen, ontwerp, opmaak en drukklaar maken van boeken, tijdschriften, affiches, folders, verpakkingen, advertenties, illustraties…\nOntwerpen logo’s, pictogrammen…",
+      "startDate": "2000-01-01",
+      "roles": ["Web designer", "Front-end Developer", "Back-end Developer", "Fotograaf", "Grafisch Vormgever"],
+      "references": [
+        {
+          "name": "Stijn Slabbinck - CTO Fisheye"
+        }
+      ],
+      "projects": [
+        {
+          "name": "Fisheye bvba",
+          "description": "Diverse projecten in opdracht"
+        },
+        {
+          "name": "Keukens Bogaert",
+          "description": "Fotograferen"
+        },
+        {
+          "name": "Atelier Vonnagel Paris",
+          "description": "Diverse projecten"
+        },
+        {
+          "name": "BDR Construct",
+          "description": "Ontwerpen logo en huisstijl\nOntwerpen & ontwikkelen website",
+          "references": ["https://www.bdr-construct.be"]
+        },
+        {
+          "name": "Djeeni Productions",
+          "description": "Diverse projecten in opdracht"
+        },
+        {
+          "name": "MediaMixer",
+          "description": "Diverse projecten in opdracht"
+        },
+        {
+          "name": "Elran Diamonds",
+          "description": "Ontwerpen & ontwikkelen website"
+        },
+        {
+          "name": "Venture Europe",
+          "description": "Ontwerpen & ontwikkelen website"
+        },
+        {
+          "name": "WE-travel",
+          "description": "Ontwerpen logo & huisstijl\nOntwerpen & ontwikkelen website"
+        },
+        {
+          "name": "Crivaco",
+          "description": "Ontwerpen & ontwikkelen website"
+        }
+      ]
+    },
+    {
+      "client": "EDPnet NV",
+      "description": "Ontwerpen van corporate logo en huisstijl, productfiches, advertenties, mailings, illustraties…\nOntwerpen en onderhouden corporate website.\nAanmaken en onderhouden webspace op webservers.",
+      "startDate": "2000-01-02",
+      "endDate": "2001-04-01",
+      "roles": ["Grafisch vormgever", "Front-end Developer", "Back-end Developer", "Webmaster"],
+      "projects": [{ "name": "EDPnet website" }, { "name": "EDPnet technische fiches" }]
+    },
+    {
+      "client": "Adera Belgium",
+      "description": "Aanmaken van websites, in samenwerking met de grafische afdeling.",
+      "startDate": "2001-04-02",
+      "endDate": "2001-10-23",
+      "roles": ["Front-end Developer", "Back-end Developer"],
+      "projects": [
+        { "name": "Adera Workgroup Manager" },
+        { "name": "Archeoweb" },
+        { "name": "Atlas Copco" },
+        { "name": "Atlas Copco Used Equipment" },
+        { "name": "Capiau Projects" },
+        { "name": "Molenheide bungalowparks" },
+        { "name": "Promedia" },
+        { "name": "Woestijnvis" }
+      ]
+    },
+    {
+      "client": "Siemens Atea",
+      "description": "Ontwerp, opmaak en drukklaar maken van tijdschriften, affiches, folders, verpakkingen, advertenties, cd-roms, technische fiches, illustraties…\nOntwerpen logo’s, pictogrammen…\nFotograferen.",
+      "startDate": "2002-06-16",
+      "endDate": "2003-10-21",
+      "roles": ["Grafisch Vormgever"],
+      "projects": [{ "name": "OTN" }]
+    },
+    {
+      "client": "sp.a Oost-Vlaanderen",
+      "description": "Ontwerp, opmaak en drukklaar maken van affiches, folders, jaarverslag, verkiezingsdrukwerk, advertenties, illustraties…\nOntwerpen logo’s, pictogrammen…\nFotograferen.",
+      "startDate": "2003-12-16",
+      "endDate": "2007-01-01",
+      "roles": ["Fotograaf", "Grafisch Vormgever", "UI designer", "Front-end Developer", "Back-end Developer", "Netwerkbeheerder"],
+      "references": [
+        {
+          "name": "Bart Van Cleynenbreugel"
+        }
+      ],
+      "projects": [
+        {
+          "name": "www.freyaweb.be",
+          "description": "Ontwerpen en bouwen van de website van Freya Van den Bossche, toenmalig minister van Leefmilieu, Consumentenzaken en Duurzame Ontwikkeling."
+        },
+        { "name": "intranet" },
+        { "name": "inactie.speldnet.be" },
+        { "name": "barbecue.speldnet.be" },
+        { "name": "congres.speldnet.be" },
+        { "name": "www.dewolken.be" },
+        { "name": "www.kiezenvoorkunst.be" },
+        { "name": "www.vanhartegent.be" },
+        {
+          "name": "Ontwerpen html-mailings",
+          "description": "Ontwerpen van Diverse html emails waaronder Nieuwsflits, Inactie, Campagneflits"
+        },
+        {
+          "name": "Netwerkbeheer",
+          "roles": ["Netwerkbeheerder"],
+          "description": "Beheren van netwerk van ±20 Mac OS X werkstations en 1 Mac OS X Server",
+          "technologies": ["OS X", "OS X Server"]
+        }
+      ]
+    },
+    {
+      "client": "Sportpaleisgroep, PSE Belgium, Tele Ticket Service",
+      "description": "",
+      "startDate": "2007-01-02",
+      "endDate": "2015-04-18",
+      "roles": ["Web designer", "Front-end Developer", "Back-end Developer", "Fotograaf", "Grafisch Vormgever"],
+      "references": [
+        {
+          "name": "Nastiassia Smeets"
+        }
+      ],
+      "projects": [
+        {
+          "name": "Website Sportpaleis Groep",
+          "roles": ["Web designer ", "Front-end Developer", "Back-end Developer", "Fotograaf"],
+          "description": "Ontwerpen, bouwen en onderhouden van websites voor de Sportapleis Groep\nBouwen van vip-bestelmodule en bestelmodule voor drankjetons.",
+          "references": [
+            "http://www.sportpaleis.be",
+            "http://www.lotto-arena.be",
+            "http://www.stadsschouwburg.be",
+            "http://www.capitole-gent.be",
+            "http://www.grenslandhallen.be",
+            "http://www.sportpaleisgroep.be"
+          ],
+          "technologies": ["CakePHP", "JQuery", "Ogone", "iOS Passbook"]
+        },
+        {
+          "name": "Website Tele Ticket Service",
+          "roles": ["Web designer"],
+          "description": "Ontwerpen website Tele Ticket Service"
+        },
+        {
+          "name": "Night of the Proms",
+          "roles": ["Web designer ", "Front-end Developer", "Back-end Developer", "Fotograaf"],
+          "description": "Ontwerpen website Night of the Proms\nLayout van affiches, brochures, VIP drukwerk…\nFotoreportages."
+        },
+        {
+          "name": "PSE Belgium",
+          "roles": ["Web designer", "Front-end Developer", "Back-end Developer"]
+        },
+        {
+          "name": "Intranet",
+          "description": "Bouwen van intranet voor de Sportpaleis Groep.\nBeheren van bestellingen VIP pakketen, beheren van bestellingen drankjetons, beheren van digital signage (totems en kassaschermen).",
+          "technologies": ["CakePHP", "JQuery"]
+        },
+        {
+          "name": "Totems",
+          "description": "Visualisatie via Quartz Composer",
+          "technologies": ["Quartz Composer"]
+        },
+        {
+          "name": "Kassaschermen",
+          "description": "",
+          "technologies": ["Raspberry Pi"]
+        },
+        {
+          "name": "Ledwall",
+          "description": "Visualisatie via Quartz Composer",
+          "technologies": ["Quartz Composer"]
+        }
+      ]
+    },
+    {
+      "client": "Inuits",
+      "description": "",
+      "startDate": "2015-04-20",
+      "roles": ["Senior Developer", "UI Designer"],
+      "projects": [
+        {
+          "name": "Sportoase",
+          "roles": ["Designer", "Front-end Developer", "Back-end Developer"],
+          "description": "Het bouwen van innovatieve software voor vrijetijdscentra (OpenSport).\nOpenSport is een softwareplatform gebouwd als totaaloplossing voor Sportoase (POS, CRM, abonnementen, toegangscontrole, zwemschool… )\nConnectie met randapparatuur (betaalterminal, pos display, kassalade, thermische printer) met behulp van Raspberry Pi.",
+          "technologies": ["AngularJS", "Symfony", "Raspberry Pi"]
+        },
+        {
+          "name": "Vlaamse Kunstcollectie - Abstract Modernisme",
+          "roles": ["UI Designer"],
+          "description": "Designen van de nieuwe website voor abstract modernisme.",
+          "references": ["http://abstractmodernisme.vlaamsekunstcollectie.be"]
+        },
+        {
+          "name": "Agentschap voor Natuur en Bos",
+          "roles": ["Developer"],
+          "technologies": ["Drupal"]
+        },
+        {
+          "name": "Hogeschool West-Vlaanderen (HoWest)",
+          "roles": ["Developer"],
+          "description": "Theming voor de HoWest website",
+          "technologies": ["Drupal"]
+        },
+        {
+          "name": "Vlaamse Instituut voor Archivering",
+          "roles": ["UI Designer"],
+          "description": "Design wireframes en mockups van het archief voor onderwijs en het archief",
+          "references": ["https://onderwijs.hetarchief.be"]
+        }
+      ]
+    },
+    {
+      "client": "UGent - DICT",
+      "description": "",
+      "startDate": "2016-08-01",
+      "endDate": "2017-06-11",
+      "roles": ["Senior Developer", "UI Designer"],
+      "projects": [
+        {
+          "name": "Simon Feedbackrapporten",
+          "roles": ["Developer"],
+          "description": "Uitbreiden van de bestaande code met:\n- uitbreiden/aanpassing pdf layout\n- aanpassen mailtemplates volgens nieuwe huisstijl\n- nieuwe stylesheet voor LimeSurvey volgens nieuwe huisstijl",
+          "technologies": ["PHP", "LaTeX", "LimeSurvey"]
+        },
+        {
+          "name": "200Y UGent Babbelbox",
+          "roles": ["Developer"],
+          "description": "Interactieve kiosk met:\n- gebruikers interactie met behulp van arduino\n- afspelen video volgens vastgelegde scenarios\n- video opname, gestuurd door de gebruiker\n- meertaligheid (nl, fr, en, arabisch en turks)",
+          "technologies": ["Arduino", "Electron", "Aurelia", "cylon.js"]
+        },
+        {
+          "name": "ELO",
+          "roles": ["Developer"],
+          "description": "Building the next ELO for UGent.",
+          "technologies": ["Angular2", "Symfony"]
+        }
+      ]
+    },
+    {
+      "client": "VRT",
+      "description": "Bij VRT maak ik als designer & react developer deel uit van het team dat verantwoordelijk is voor alle digitale touchpoints van alle radio netten.",
+      "startDate": "2017-06-12",
+      "roles": ["React developer", "Front-end developer"],
+      "projects": [
+        {
+          "name": "Websites radiomerken VRT",
+          "roles": ["Designer", "Front-end Developer", "Back-end Developer"],
+          "description": "Meewerken aan websites Studio Brussel, Radio 1, Radio 2, MNM, GenerationM, Klara.",
+          "references": [
+            "https://www.radio1.be",
+            "https://www.radio2.be",
+            "https://www.mnm.be",
+            "https://www.generationm.be",
+            "https://www.stubru.be",
+            "https://www.klara.be"
+          ],
+          "technologies": ["ReactJS", "AngularJS", "Drupal"]
+        },
+        {
+          "name": "Klara Top 100",
+          "roles": ["Designer", "Front-end Developer"],
+          "technologies": ["ReactJS"]
+        },
+        {
+          "name": "Radio 1 Groot Dictee",
+          "roles": ["Designer", "Front-end Developer"],
+          "technologies": ["ReactJS"]
+        },
+        {
+          "name": "Lang Zullen We Lezen",
+          "roles": ["Designer", "Front-end Developer", "Back-end Developer"],
+          "technologies": ["ReactJS", "FeathersJS", "GraphQL"],
+          "tags": ["Microservices"]
+        },
+        {
+          "name": "Restyling MNM",
+          "roles": ["Designer", "Front-end Developer"],
+          "references": ["https://www.mnm.be"]
+        },
+        {
+          "name": "Restyling GenerationM",
+          "roles": ["Designer", "Front-end Developer"],
+          "references": ["https://www.generationm.be"]
+        },
+        {
+          "name": "Restyling Stubru",
+          "roles": ["Designer", "Front-end Developer"],
+          "references": ["https://www.stubru.be"]
+        },
+        {
+          "name": "Hitlijsten",
+          "roles": ["Designer", "Front-end Developer", "Back-end Developer"],
+          "description": "Een nieuwe generieke stemtool voor de hitlijsten stemmingen.",
+          "references": ["https://deafrekening.stubru.be", "https://greatestswitch.stubru.be"],
+          "technologies": ["ReactJS", "GraphQL", "AWS Amplify", "AWS Lambda"]
+        },
+        {
+          "name": "VRT audioplayer",
+          "roles": ["Designer", "Front-end Developer"],
+          "technologies": ["ReactJS"]
+        },
+        {
+          "name": "VRT audioeditor",
+          "roles": ["Designer", "Front-end Developer"],
+          "technologies": ["ReactJS"]
+        }
+      ]
+    }
+  ]
+}
