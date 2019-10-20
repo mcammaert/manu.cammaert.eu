@@ -3,9 +3,9 @@
 exports[`Copy default props should match the snapshot 1`] = `
 .c0 {
   font-size: 1em;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.776889em;
-  color: #1E2025;
+  color: #262830;
 }
 
 <div>

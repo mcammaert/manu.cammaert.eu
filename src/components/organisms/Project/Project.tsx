@@ -8,11 +8,11 @@ import S from './Project.style';
 
 const Project: React.FC<ProjectProps> = ({ name, roles, description, technologies, references }) => (
   <S.Project>
-    <S.Title as="h4">{name}</S.Title>
+    <S.Title as="h5">{name}</S.Title>
     {roles && (
       <>
         <ScreenReaderOnly>
-          <h5>Rollen</h5>
+          <h6>Rollen</h6>
         </ScreenReaderOnly>
         <S.Roles as="ul">
           {roles.map(role => (
@@ -24,11 +24,13 @@ const Project: React.FC<ProjectProps> = ({ name, roles, description, technologie
     {technologies && (
       <>
         <ScreenReaderOnly>
-          <h5>Technologiën</h5>
+          <h6>Technologiën</h6>
         </ScreenReaderOnly>
         <S.Technologies as="ul">
           {technologies.map(technology => (
-            <S.Technology as="li">{technology}</S.Technology>
+            <S.Technology as="li">
+              <S.Label>{technology}</S.Label>
+            </S.Technology>
           ))}
         </S.Technologies>
       </>
@@ -37,7 +39,7 @@ const Project: React.FC<ProjectProps> = ({ name, roles, description, technologie
     {description && (
       <>
         <ScreenReaderOnly>
-          <h5>Omschrijving</h5>
+          <h6>Omschrijving</h6>
         </ScreenReaderOnly>
         <S.Description>{description}</S.Description>
       </>
@@ -45,7 +47,7 @@ const Project: React.FC<ProjectProps> = ({ name, roles, description, technologie
     {references && (
       <>
         <ScreenReaderOnly>
-          <h5>Rollen</h5>
+          <h6>Rollen</h6>
         </ScreenReaderOnly>
         <S.References as="ul">
           {references.map(reference => (

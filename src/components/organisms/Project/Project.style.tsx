@@ -28,7 +28,7 @@ export const Roles = styled.ul`
 export const Role = styled.li`
   font-size: ${modularScale(0)};
   line-height: ${modularScale(1)};
-  display: inline;
+  display: inline-block;
 
   &:after {
     content: ' / ';
@@ -48,16 +48,19 @@ export const Technologies = styled.span`
 `;
 
 export const Technology = styled.span`
+  display: inline-block;
+  line-height: ${modularScale(2)};
+  margin-right: ${modularScale(-3)};
+`;
+
+export const Label = styled.span`
   font-size: ${modularScale(-1)};
-  line-height: ${modularScale(3)};
   color: ${({ theme }) => theme.colors.secondary};
-  background-color: ${({ theme }) => rgba(theme.colors.secondaryInvert, 0.7)};
-  display: inline;
-  margin-right: ${modularScale(0)};
-  border-radius: 5px;
-  padding: 0.25em 0.6em;
+  background-color: ${({ theme }) => rgba(theme.colors.secondaryInvert, 0.8)};
+  border-radius: 1em;
+  padding: 0.3em 1em;
   font-weight: 400;
-  box-shadow: 0 0 3px ${({ theme }) => rgba(theme.colors.secondary, 0.15)};
+  box-shadow: 0 1px 6px ${({ theme }) => rgba(theme.colors.secondary, 0.1)};
   text-transform: uppercase;
 `;
 
@@ -74,7 +77,7 @@ export const Reference = styled.span`
   color: ${({ theme }) => theme.colors.secondary};
   margin-right: ${modularScale(0)};
   border-radius: 5px;
-  font-weight: 300;
+  font-weight: 400;
 `;
 
-export default { Project, Title, Roles, Role, Description, Technologies, Technology, References, Reference };
+export default { Project, Title, Roles, Role, Description, Technologies, Technology, Label, References, Reference };

@@ -26,7 +26,7 @@ export const GlobalStyle = createGlobalStyle<GlobalStyleProps>`
     width: 100vw;
     height: 100vh;
     background: ${colors.white};
-    background-image: linear-gradient(162deg, ${rgba(colors.accent3, 0.5)} 0%, ${rgba(colors.primary10, 0.4)} 82%);
+    background-image: linear-gradient(162deg, ${rgba(colors.accent3, 0.35)} 0%, ${rgba(colors.primary10, 0.2)} 82%);
     background-attachment: fixed;    
     color: ${colors.black};
   }
@@ -41,7 +41,7 @@ const theme = {
     secondaryInvert: colors.white,
     tertiary: colors.secondary80,
     tertiaryInvert: colors.white,
-    copy: colors.black,
+    copy: colors.charcoal,
     copyInvert: colors.white,
   },
 };

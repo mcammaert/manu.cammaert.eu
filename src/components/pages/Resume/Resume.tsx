@@ -12,9 +12,12 @@ const Resume: React.FC<ResumeProps> = ({ jobs }) => {
   return (
     <S.Resume>
       <Default>
-        {jobs.map(({ client }) => (
-          <JobContainer key={client} client={client} />
-        ))}
+        <main>
+          <h2>Carrière</h2>
+          {jobs.map(({ client }) => (
+            <JobContainer key={client} client={client} />
+          ))}
+        </main>
       </Default>
     </S.Resume>
   );

@@ -23,7 +23,7 @@ exports[`Job default props should match the snapshot 1`] = `
   padding-right: 0.9375rem;
 }
 
-.c6 {
+.c7 {
   position: absolute;
   left: -10000px;
   top: auto;
@@ -32,11 +32,11 @@ exports[`Job default props should match the snapshot 1`] = `
   overflow: hidden;
 }
 
-.c7 {
+.c8 {
   font-size: 1em;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.776889em;
-  color: #1E2025;
+  color: #262830;
 }
 
 .c2 {
@@ -59,9 +59,9 @@ exports[`Job default props should match the snapshot 1`] = `
 }
 
 .c4 {
-  font-size: 1.776889em;
-  line-height: 1.776889em;
-  font-weight: 400;
+  font-size: 2.3685930369999997em;
+  line-height: 1.333em;
+  font-weight: 200;
   color: #262830;
   display: inline;
 }
@@ -69,13 +69,17 @@ exports[`Job default props should match the snapshot 1`] = `
 .c5 {
   font-size: 1em;
   line-height: 1.776889em;
-  font-weight: 300;
+  font-weight: 400;
   color: #262830;
   display: inline;
   margin-left: 0.7501875468867217em;
 }
 
-.c8 {
+.c6 {
+  white-space: nowrap;
+}
+
+.c9 {
   white-space: pre-line;
 }
 
@@ -92,29 +96,37 @@ exports[`Job default props should match the snapshot 1`] = `
         <div
           class="c3"
         >
-          <h2
+          <h3
             class="c4"
           >
             Lorem ipsum
-          </h2>
+          </h3>
           <span
             class="c5"
           >
-            Van 
-            20 oktober 2019
-             tot 
-            20 oktober 2019
+            <span
+              class="c6"
+            >
+              Van 
+              20 oktober 2019
+            </span>
+            <span
+              class="c6"
+            >
+               tot 
+              20 oktober 2019
+            </span>
           </span>
         </div>
         <div
-          class="c6"
+          class="c7"
         >
-          <h3>
+          <h4>
             Omschrijving
-          </h3>
+          </h4>
         </div>
         <div
-          class="c7 c8"
+          class="c8 c9"
         >
           Lorem ipsum dolor sit amet
         </div>

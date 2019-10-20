@@ -23,9 +23,9 @@ export const TitleContainer = styled.div`
 `;
 
 export const Title = styled.div`
-  font-size: ${modularScale(2)};
-  line-height: ${modularScale(2)};
-  font-weight: 400;
+  font-size: ${modularScale(3)};
+  line-height: ${modularScale(1)};
+  font-weight: 200;
   color: ${({ theme }) => theme.colors.primary};
   display: inline;
 `;
@@ -33,10 +33,14 @@ export const Title = styled.div`
 export const Date = styled.div`
   font-size: ${modularScale(0)};
   line-height: ${modularScale(2)};
-  font-weight: 300;
+  font-weight: 400;
   color: ${({ theme }) => theme.colors.primary};
   display: inline;
   margin-left: ${modularScale(-1)};
+`;
+
+export const DateSegment = styled.span`
+  white-space: nowrap;
 `;
 
 export const Description = styled(Copy)`
@@ -50,10 +54,12 @@ export const Roles = styled.ul`
   margin: 0;
   padding: 0;
   margin-bottom: ${modularScale(1)};
+  font-size: ${modularScale(1)};
+  font-weight: 300;
 `;
 
 export const Role = styled.li`
-  display: inline;
+  display: inline-block;
 
   &:after {
     content: ' / ';
@@ -63,4 +69,4 @@ export const Role = styled.li`
   }
 `;
 
-export default { Job, TitleContainer, Title, Date, Description, Label, Roles, Role };
+export default { Job, TitleContainer, Title, Date, DateSegment, Description, Label, Roles, Role };

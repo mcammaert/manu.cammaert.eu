@@ -15,20 +15,25 @@ const Job: React.FC<JobProps> = ({ client, startDate, endDate, description, role
   <Container>
     <S.Job>
       <S.TitleContainer>
-        <S.Title as="h2">{client}</S.Title>
+        <S.Title as="h3">{client}</S.Title>
         <S.Date as="span">
           {endDate && (
             <>
-              Van {moment(startDate).format('LL')} tot {moment(endDate).format('LL')}
+              <S.DateSegment>Van {moment(startDate).format('LL')}</S.DateSegment>
+              <S.DateSegment> tot {moment(endDate).format('LL')}</S.DateSegment>
             </>
           )}
-          {!endDate && <>Sinds {moment(startDate).format('LL')}</>}
+          {!endDate && (
+            <>
+              Sinds <S.DateSegment>{moment(startDate).format('LL')}</S.DateSegment>
+            </>
+          )}
         </S.Date>
       </S.TitleContainer>
       {roles && (
         <>
           <ScreenReaderOnly>
-            <h3>Rollen</h3>
+            <h4>Rollen</h4>
           </ScreenReaderOnly>
           <S.Roles>
             {roles.map(role => (
@@ -40,7 +45,7 @@ const Job: React.FC<JobProps> = ({ client, startDate, endDate, description, role
       {description && (
         <>
           <ScreenReaderOnly>
-            <h3>Omschrijving</h3>
+            <h4>Omschrijving</h4>
           </ScreenReaderOnly>
           <S.Description>{description}</S.Description>
         </>
@@ -48,7 +53,7 @@ const Job: React.FC<JobProps> = ({ client, startDate, endDate, description, role
       {projects && (
         <>
           <ScreenReaderOnly>
-            <h3>Projecten</h3>
+            <h4>Projecten</h4>
           </ScreenReaderOnly>
           {projects.map(({ name }) => (
             <ProjectContainer client={client} project={name} />
