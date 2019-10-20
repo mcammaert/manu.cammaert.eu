@@ -1,13 +1,11 @@
 import React from 'react';
 
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, useLocation } from 'react-router-dom';
 import loadable from '@loadable/component';
 import pMinDelay from 'p-min-delay';
 import { useTransition, animated } from 'react-spring';
 
-import useRouter from 'hooks/useRouter';
-
-import { GlobalStyle } from 'components/theme/theme';
+import { GlobalStyle } from 'components/theme/light';
 import { Header } from 'components/organisms/Header';
 
 import { Loading } from 'components/molecules/Loading';
@@ -21,7 +19,7 @@ const fallbackTimeout = 20;
 const Home = loadable(() => pMinDelay(import('components/pages/Home/Home'), fallbackTimeout), {
   fallback: <Loading />,
 });
-const Resume = loadable(() => pMinDelay(import('components/pages/Resume/Resume'), fallbackTimeout), {
+const Resume = loadable(() => pMinDelay(import('components/pages/Resume/Resume.container'), fallbackTimeout), {
   fallback: <Loading />,
 });
 const Contact = loadable(() => pMinDelay(import('components/pages/Contact/Contact'), fallbackTimeout), {
@@ -29,17 +27,17 @@ const Contact = loadable(() => pMinDelay(import('components/pages/Contact/Contac
 });
 
 const Router: React.FC<RouterProps> = () => {
-  const { location } = useRouter();
+  const location = useLocation();
 
   const transitions = useTransition(location, loc => loc.pathname, {
-    from: { opacity: 0, transform: 'translate3d(100px, 0, 0)' },
+    from: { opacity: 0, transform: 'translate3d(-20px, 0, 0)' },
     enter: { opacity: 1, transform: 'translate3d(0, 0, 0)' },
     leave: { opacity: 0, transform: 'translate3d(-20px, 0, 0)' },
   });
 
   return (
     <S.Router>
-      <GlobalStyle />
+      <GlobalStyle location={location.pathname} />
       <Header />
       {transitions.map(({ item, props, key }) => (
         <animated.div key={key} style={props}>

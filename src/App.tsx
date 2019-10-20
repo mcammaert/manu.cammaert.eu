@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 
-import theme from 'components/theme/theme';
+import theme from 'components/theme/light';
 
 import { Router } from 'components/pages/Router';
 

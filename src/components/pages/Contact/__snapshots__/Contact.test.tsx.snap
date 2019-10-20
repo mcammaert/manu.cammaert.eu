@@ -2,7 +2,38 @@
 
 exports[`Contact default props should match the snapshot 1`] = `
 .c1 {
+  width: 100vw;
+}
+
+.c2 {
   position: absolute;
+  font-size: 0.7501875468867217em;
+  color: #575d6b;
+  padding-top: 5.610232974924883em;
+  padding-bottom: 5.610232974924883em;
+  width: 100vw;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c4 {
+  width: 100vw;
+  max-width: 800px;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
 }
 
 .c0 {
@@ -14,16 +45,30 @@ exports[`Contact default props should match the snapshot 1`] = `
     class="c0"
   >
     <div
-      class=""
+      class="c1"
     >
       <p>
         Contact
       </p>
-      <div
-        class="c1"
+      <footer
+        class="c2"
       >
-        Footer
-      </div>
+        <div
+          class="c3"
+        >
+          <div
+            class="c4"
+          >
+            <div
+              class=""
+            >
+              Copyright © 
+              2019
+               Manu Cammaert, alle rechten voorbehouden.
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   </div>
 </div>

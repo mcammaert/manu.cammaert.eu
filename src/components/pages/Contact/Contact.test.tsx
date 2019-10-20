@@ -4,14 +4,11 @@ import { cleanup } from '@testing-library/react';
 import 'jest-styled-components';
 
 import { renderComponent } from 'testing/react-testing-library';
+import theme from 'components/theme/light';
 
 import Contact from './Contact';
 
 afterEach(cleanup);
-
-const theme = {
-  colors: {},
-};
 
 describe('Contact', () => {
   describe('default props', () => {

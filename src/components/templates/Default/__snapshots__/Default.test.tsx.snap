@@ -1,19 +1,64 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Default default props should match the snapshot 1`] = `
-.c0 {
+.c1 {
   position: absolute;
+  font-size: 0.7501875468867217em;
+  color: #575d6b;
+  padding-top: 5.610232974924883em;
+  padding-bottom: 5.610232974924883em;
+  width: 100vw;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c3 {
+  width: 100vw;
+  max-width: 800px;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+}
+
+.c0 {
+  width: 100vw;
 }
 
 <div>
   <div
-    class=""
+    class="c0"
   >
-    <div
-      class="c0"
+    <footer
+      class="c1"
     >
-      Footer
-    </div>
+      <div
+        class="c2"
+      >
+        <div
+          class="c3"
+        >
+          <div
+            class=""
+          >
+            Copyright © 
+            2019
+             Manu Cammaert, alle rechten voorbehouden.
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
 </div>
 `;

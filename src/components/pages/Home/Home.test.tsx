@@ -4,14 +4,11 @@ import { cleanup } from '@testing-library/react';
 import 'jest-styled-components';
 
 import { renderComponent } from 'testing/react-testing-library';
+import theme from 'components/theme/light';
 
 import Home from './Home';
 
 afterEach(cleanup);
-
-const theme = {
-  colors: {},
-};
 
 describe('Home', () => {
   describe('default props', () => {

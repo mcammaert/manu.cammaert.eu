@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Project default props should match the snapshot 1`] = `
+.c0 {
+  border-top: 1px solid rgba(38,40,48,0.08);
+  margin-top: 1em;
+  padding-top: 1em;
+  margin-bottom: 1em;
+}
+
+.c1 {
+  font-size: 1em;
+  line-height: 1.333em;
+  font-weight: 400;
+  color: #0d5189;
+  display: inline;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <h5
+      class="c1"
+    >
+      Lorem ipsum
+    </h5>
+  </div>
+</div>
+`;
