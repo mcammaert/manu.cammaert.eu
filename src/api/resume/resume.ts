@@ -20,10 +20,10 @@ export const getAllHobbies = (): Hobbies => resume.hobbies;
 
 export const getAllJobs = (): Jobs => resume.career.sort((a, b) => (a.startDate < b.startDate ? 1 : -1));
 
-export const getJob = (client: string): Job | undefined => resume.career.find(job => job.client === client);
+export const getJob = (id: string): Job | undefined => resume.career.find(job => job.id === id);
 
-export const getProject = (inputClient: string, projectName: string): Project | undefined => {
-  const job = resume.career.find(({ client }) => client === inputClient);
+export const getProject = (client: string, projectName: string): Project | undefined => {
+  const job = resume.career.find(({ id }) => id === client);
   if (job) return job.projects.find(project => project.name === projectName);
   return undefined;
 };

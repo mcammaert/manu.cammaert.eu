@@ -48,7 +48,7 @@ export const Description = styled(Copy)`
 export const Label = styled.span``;
 
 export const Roles = styled.ul`
-  display: block;
+  line-height: ${modularScale(1)};
   margin: 0;
   padding: 0;
   margin-bottom: ${modularScale(-1)};
@@ -60,10 +60,13 @@ export const Role = styled.li`
   display: inline-block;
 
   &:after {
-    content: ' / ';
+    content: '/';
+    padding-left: ${modularScale(-4)};
+    padding-right: ${modularScale(-4)};
   }
   &:last-child:after {
     content: '';
+    padding 0;
   }
 `;
 

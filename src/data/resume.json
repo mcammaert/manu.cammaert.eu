@@ -53,6 +53,7 @@
   "career": [
     {
       "client": "Cammaert Design",
+      "id": "cammaert-design",
       "description": "Ontwerp, opmaak en drukklaar maken van boeken, tijdschriften, affiches, folders, verpakkingen, advertenties, illustraties…\nOntwerpen logo’s, pictogrammen…",
       "startDate": "1996-12-01",
       "endDate": "2000-01-01",
@@ -70,6 +71,7 @@
     },
     {
       "client": "Freelance",
+      "id": "freelance",
       "description": "Aanmaak van websites, multimediaprojecten, fotograferen, ontwerp, opmaak en drukklaar maken van boeken, tijdschriften, affiches, folders, verpakkingen, advertenties, illustraties…\nOntwerpen logo’s, pictogrammen…",
       "startDate": "2000-01-01",
       "roles": ["Web designer", "Front-end Developer", "Back-end Developer", "Fotograaf", "Grafisch Vormgever"],
@@ -134,6 +136,7 @@
     },
     {
       "client": "EDPnet NV",
+      "id": "edpnet",
       "description": "Ontwerpen van corporate logo en huisstijl, productfiches, advertenties, mailings, illustraties…\nOntwerpen en onderhouden corporate website.\nAanmaken en onderhouden webspace op webservers.",
       "startDate": "2000-01-02",
       "endDate": "2001-04-01",
@@ -142,6 +145,7 @@
     },
     {
       "client": "Adera Belgium",
+      "id": "adera-belgium",
       "description": "Aanmaken van websites, in samenwerking met de grafische afdeling.",
       "startDate": "2001-04-02",
       "endDate": "2001-10-23",
@@ -159,6 +163,7 @@
     },
     {
       "client": "Siemens Atea",
+      "id": "siemens-atea",
       "description": "Ontwerp, opmaak en drukklaar maken van tijdschriften, affiches, folders, verpakkingen, advertenties, cd-roms, technische fiches, illustraties…\nOntwerpen logo’s, pictogrammen…\nFotograferen.",
       "startDate": "2002-06-16",
       "endDate": "2003-10-21",
@@ -167,6 +172,7 @@
     },
     {
       "client": "sp.a Oost-Vlaanderen",
+      "id": "spa-oost-vlaanderen",
       "description": "Ontwerp, opmaak en drukklaar maken van affiches, folders, jaarverslag, verkiezingsdrukwerk, advertenties, illustraties…\nOntwerpen logo’s, pictogrammen…\nFotograferen.",
       "startDate": "2003-12-16",
       "endDate": "2007-01-01",
@@ -202,6 +208,7 @@
     },
     {
       "client": "Sportpaleisgroep, PSE Belgium, Tele Ticket Service",
+      "id": "sportpaleisgroep",
       "description": "",
       "startDate": "2007-01-02",
       "endDate": "2015-04-18",
@@ -266,6 +273,7 @@
     },
     {
       "client": "Inuits",
+      "id": "inuits",
       "description": "",
       "startDate": "2015-04-20",
       "roles": ["Senior Developer", "UI Designer"],
@@ -305,6 +313,7 @@
     },
     {
       "client": "UGent - DICT",
+      "id": "ugent",
       "description": "",
       "startDate": "2016-08-01",
       "endDate": "2017-06-11",
@@ -332,6 +341,7 @@
     },
     {
       "client": "VRT",
+      "id": "vrt",
       "description": "Bij VRT maak ik als designer & react developer deel uit van het team dat verantwoordelijk is voor alle digitale touchpoints van alle radio netten.",
       "startDate": "2017-06-12",
       "roles": ["React developer", "Front-end developer"],

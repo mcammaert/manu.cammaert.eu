@@ -60,6 +60,7 @@ export type Software = Array<Package>;
 
 export interface Job {
   client: string;
+  id: string;
   description?: Description;
   startDate: string;
   endDate?: string;

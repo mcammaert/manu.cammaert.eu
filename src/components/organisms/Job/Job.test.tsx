@@ -13,7 +13,9 @@ afterEach(cleanup);
 describe('Job', () => {
   describe('default props', () => {
     it('should match the snapshot', () => {
-      const component = <Job client="Lorem ipsum" description="Lorem ipsum dolor sit amet" startdate="2019-10-18" endDate="2019-10-20" />;
+      const component = (
+        <Job client="Lorem ipsum" id="lorem-ipsum" description="Lorem ipsum dolor sit amet" startDate="2019-10-18" endDate="2019-10-20" />
+      );
       const { container } = renderComponent({ theme, component });
       expect(container).toMatchSnapshot();
     });

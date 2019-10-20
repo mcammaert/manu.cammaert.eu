@@ -11,11 +11,12 @@ export const Project = styled.div`
 `;
 
 export const Title = styled.div`
-  font-size: ${modularScale(0)};
+  font-size: ${modularScale(1)};
   line-height: ${modularScale(1)};
-  font-weight: 400;
+  font-weight: 200;
   color: ${({ theme }) => theme.colors.secondary};
-  display: inline;
+  margin: 0;
+  margin-bottom: ${modularScale(-4)};
 `;
 
 export const Roles = styled.ul`
@@ -31,10 +32,13 @@ export const Role = styled.li`
   display: inline-block;
 
   &:after {
-    content: ' / ';
+    content: '/';
+    padding-left: ${modularScale(-4)};
+    padding-right: ${modularScale(-4)};
   }
   &:last-child:after {
     content: '';
+    padding 0;
   }
 `;
 

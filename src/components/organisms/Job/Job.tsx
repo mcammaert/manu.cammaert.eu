@@ -11,7 +11,7 @@ import { JobProps } from './Job.types';
 
 import S from './Job.style';
 
-const Job: React.FC<JobProps> = ({ client, startDate, endDate, description, roles, projects }) => (
+const Job: React.FC<JobProps> = ({ client, id, startDate, endDate, description, roles, projects, displayProjects = false }) => (
   <Container>
     <S.Job>
       <S.TitleContainer>
@@ -50,13 +50,13 @@ const Job: React.FC<JobProps> = ({ client, startDate, endDate, description, role
           <S.Description>{description}</S.Description>
         </>
       )}
-      {projects && (
+      {displayProjects && projects && (
         <>
           <ScreenReaderOnly>
             <h4>Projecten</h4>
           </ScreenReaderOnly>
           {projects.map(({ name }) => (
-            <ProjectContainer key={name} client={client} project={name} />
+            <ProjectContainer key={name} client={id} project={name} />
           ))}
         </>
       )}
