@@ -51,7 +51,7 @@ export const Technology = styled.span`
   font-size: ${modularScale(-1)};
   line-height: ${modularScale(3)};
   color: ${({ theme }) => theme.colors.secondary};
-  background-color: ${({ theme }) => rgba(theme.colors.secondaryInvert, 0.35)};
+  background-color: ${({ theme }) => rgba(theme.colors.secondaryInvert, 0.7)};
   display: inline;
   margin-right: ${modularScale(0)};
   border-radius: 5px;

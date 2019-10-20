@@ -26,7 +26,7 @@ const Job: React.FC<JobProps> = ({ client, startDate, endDate, description, role
         </S.Date>
       </S.TitleContainer>
       {roles && (
-        <div>
+        <>
           <ScreenReaderOnly>
             <h3>Rollen</h3>
           </ScreenReaderOnly>
@@ -35,11 +35,21 @@ const Job: React.FC<JobProps> = ({ client, startDate, endDate, description, role
               <S.Role key={role}>{role}</S.Role>
             ))}
           </S.Roles>
-        </div>
+        </>
       )}
-      {description && <S.Description>{description}</S.Description>}
+      {description && (
+        <>
+          <ScreenReaderOnly>
+            <h3>Omschrijving</h3>
+          </ScreenReaderOnly>
+          <S.Description>{description}</S.Description>
+        </>
+      )}
       {projects && (
         <>
+          <ScreenReaderOnly>
+            <h3>Projecten</h3>
+          </ScreenReaderOnly>
           {projects.map(({ name }) => (
             <ProjectContainer client={client} project={name} />
           ))}

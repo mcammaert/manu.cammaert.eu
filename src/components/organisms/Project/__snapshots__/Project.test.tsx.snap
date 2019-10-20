@@ -20,11 +20,11 @@ exports[`Project default props should match the snapshot 1`] = `
   <div
     class="c0"
   >
-    <h5
+    <h4
       class="c1"
     >
       Lorem ipsum
-    </h5>
+    </h4>
   </div>
 </div>
 `;
