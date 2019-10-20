@@ -5,6 +5,8 @@
       "components/*": ["components/*"],
       "hooks/*": ["hooks/*"],
       "data/*": ["data/*"],
+      "api/*": ["api/*"],
+      "utils/*": ["utils/*"],
       "testing/*": ["../testing/*"]
     }
   }
