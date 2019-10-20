@@ -27,3 +27,17 @@ export const getProject = (client: string, projectName: string): Project | undef
   if (job) return job.projects.find(project => project.name === projectName);
   return undefined;
 };
+
+export default {
+  getPersonal,
+  getAllSkills,
+  getAllTechnical,
+  getAllSoftware,
+  getAllEducation,
+  getAllTraining,
+  getAllLanguages,
+  getAllHobbies,
+  getAllJobs,
+  getJob,
+  getProject,
+};

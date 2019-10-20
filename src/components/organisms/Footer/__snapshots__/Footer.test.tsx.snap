@@ -14,6 +14,7 @@ exports[`Footer default props should match the snapshot 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin-bottom: 0;
 }
 
 .c2 {
@@ -21,15 +22,20 @@ exports[`Footer default props should match the snapshot 1`] = `
   max-width: 800px;
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .c0 {
   position: absolute;
   font-size: 0.7501875468867217em;
-  color: #5e6377;
   padding-top: 5.610232974924883em;
   padding-bottom: 5.610232974924883em;
   width: 100vw;
+}
+
+.c3 {
+  color: rgba(38,40,48,0.45);
 }
 
 <div>
@@ -43,7 +49,7 @@ exports[`Footer default props should match the snapshot 1`] = `
         class="c2"
       >
         <div
-          class=""
+          class="c3"
         >
           Copyright © 
           2019

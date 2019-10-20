@@ -4,10 +4,13 @@ exports[`Default default props should match the snapshot 1`] = `
 .c1 {
   position: absolute;
   font-size: 0.7501875468867217em;
-  color: #5e6377;
   padding-top: 5.610232974924883em;
   padding-bottom: 5.610232974924883em;
   width: 100vw;
+}
+
+.c4 {
+  color: rgba(38,40,48,0.45);
 }
 
 .c2 {
@@ -23,6 +26,7 @@ exports[`Default default props should match the snapshot 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin-bottom: 0;
 }
 
 .c3 {
@@ -30,6 +34,8 @@ exports[`Default default props should match the snapshot 1`] = `
   max-width: 800px;
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .c0 {
@@ -50,7 +56,7 @@ exports[`Default default props should match the snapshot 1`] = `
           class="c3"
         >
           <div
-            class=""
+            class="c4"
           >
             Copyright © 
             2019

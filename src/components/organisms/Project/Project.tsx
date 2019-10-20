@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { ScreenReaderOnly } from 'components/atoms/ScreenReaderOnly';
+import { Label } from 'components/atoms/Label';
 import { Title } from 'components/atoms/Title';
 
 import { ProjectProps } from './Project.types';
@@ -35,7 +36,7 @@ const Project: React.FC<ProjectProps> = ({ name, roles, description, technologie
         <S.Technologies as="ul">
           {technologies.map(technology => (
             <S.Technology key={technology} as="li">
-              <S.Label>{technology}</S.Label>
+              <Label>{technology}</Label>
             </S.Technology>
           ))}
         </S.Technologies>

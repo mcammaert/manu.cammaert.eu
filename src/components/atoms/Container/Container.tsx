@@ -4,9 +4,9 @@ import { ContainerProps } from './Container.types';
 
 import S from './Container.style';
 
-const Container: React.FC<ContainerProps> = ({ children, className }) => (
-  <S.Container className={className}>
-    <S.Content>{children}</S.Content>
+const Container: React.FC<ContainerProps> = ({ children, className, margin = false, padding = false }) => (
+  <S.Container margin={margin} className={className}>
+    <S.Content padding={padding}>{children}</S.Content>
   </S.Container>
 );
 

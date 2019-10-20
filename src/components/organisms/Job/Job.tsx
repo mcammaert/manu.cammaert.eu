@@ -27,7 +27,7 @@ const Job: React.FC<JobProps> = ({
   <Container>
     <S.Job>
       <S.TitleContainer>
-        <Title size={3} header={headerLevel}>
+        <Title size={2} header={headerLevel}>
           {client}
         </Title>
       </S.TitleContainer>

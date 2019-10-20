@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table default props should match the snapshot 1`] = `
+.c0 {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.c0 th {
+  font-size: 0.7501875468867217em;
+  text-align: left;
+  padding: 0.5627813555039173em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.c0 td {
+  font-size: 1em;
+  border-top: 1px solid rgba(38,40,48,0.08);
+  padding: 0.5627813555039173em;
+}
+
+<div>
+  <table
+    class="c0"
+  />
+</div>
+`;

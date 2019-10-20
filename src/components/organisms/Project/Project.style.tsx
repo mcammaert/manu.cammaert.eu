@@ -53,17 +53,6 @@ export const Technology = styled.span`
   margin-right: ${modularScale(-3)};
 `;
 
-export const Label = styled.span`
-  font-size: ${modularScale(-1)};
-  color: ${({ theme }) => theme.colors.secondary};
-  background-color: ${({ theme }) => rgba(theme.colors.secondary, 0.05)};
-  border-radius: 1em;
-  padding: 0.3em 1em;
-  font-weight: 400;
-  box-shadow: 0 1px 6px ${({ theme }) => rgba(theme.colors.secondary, 0.01)};
-  text-transform: uppercase;
-`;
-
 export const References = styled.span`
   margin-left: ${({ theme }) => rem(theme.margin)};
   padding: 0;
@@ -80,4 +69,4 @@ export const Reference = styled.span`
   font-weight: 400;
 `;
 
-export default { Project, Title, Roles, Role, Description, Technologies, Technology, Label, References, Reference };
+export default { Project, Title, Roles, Role, Description, Technologies, Technology, References, Reference };

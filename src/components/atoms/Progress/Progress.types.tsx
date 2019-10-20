@@ -1,6 +1,5 @@
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
-export interface ContainerProps {
+export interface ProgressProps {
   className?: string;
-  margin?: boolean;
-  padding?: boolean;
+  progress: number;
 }

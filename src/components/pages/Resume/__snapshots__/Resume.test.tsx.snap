@@ -5,16 +5,19 @@ exports[`Resume default props should match the snapshot 1`] = `
   width: 100vw;
 }
 
-.c2 {
+.c9 {
   position: absolute;
   font-size: 0.7501875468867217em;
-  color: #5e6377;
   padding-top: 5.610232974924883em;
   padding-bottom: 5.610232974924883em;
   width: 100vw;
 }
 
-.c3 {
+.c11 {
+  color: rgba(38,40,48,0.45);
+}
+
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -27,17 +30,81 @@ exports[`Resume default props should match the snapshot 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin-bottom: 1.333em;
 }
 
-.c4 {
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.c3 {
   width: 100vw;
   max-width: 800px;
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.c4 {
+  font-size: 1.776889em;
+  line-height: 1.333em;
+  font-weight: 200;
+  color: #262830;
+  margin: 0;
+  margin-bottom: 0.42219156451906775em;
+}
+
+.c6 {
+  font-size: 1em;
+  line-height: 1.333em;
+  font-weight: 200;
+  color: #262830;
+  margin: 0;
+  margin-bottom: 0.42219156451906775em;
+}
+
+.c7 {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.c7 th {
+  font-size: 0.7501875468867217em;
+  text-align: left;
+  padding: 0.5627813555039173em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.c7 td {
+  font-size: 1em;
+  border-top: 1px solid rgba(38,40,48,0.08);
+  padding: 0.5627813555039173em;
 }
 
 .c0 {
   position: absolute;
+}
+
+.c5 {
+  padding: 0;
+}
+
+.c8 {
+  margin-top: 1.333em;
 }
 
 <div>
@@ -48,21 +115,181 @@ exports[`Resume default props should match the snapshot 1`] = `
       class="c1"
     >
       <main>
-        <h2>
-          Carrière
-        </h2>
-      </main>
-      <footer
-        class="c2"
-      >
         <div
-          class="c3"
+          class="c2"
         >
           <div
-            class="c4"
+            class="c3"
+          >
+            <h2
+              class="c4"
+              size="2"
+            >
+              Persoonlijke gegevens
+            </h2>
+          </div>
+        </div>
+        <div
+          class="c2"
+        >
+          <div
+            class="c3"
+          >
+            <h2
+              class="c4"
+              size="2"
+            >
+              Vaardigheden
+            </h2>
+            <ul
+              class="c5"
+            />
+          </div>
+        </div>
+        <div
+          class="c2"
+        >
+          <div
+            class="c3"
+          >
+            <h2
+              class="c4"
+              size="2"
+            >
+              Technologiën
+            </h2>
+            <ul
+              class="c5"
+            />
+          </div>
+        </div>
+        <div
+          class="c2"
+        >
+          <div
+            class="c3"
+          >
+            <h2
+              class="c4"
+              size="2"
+            >
+              Software
+            </h2>
+            <ul
+              class="c5"
+            />
+          </div>
+        </div>
+        <div
+          class="c2"
+        >
+          <div
+            class="c3"
+          >
+            <h2
+              class="c4"
+              size="2"
+            >
+              Opleidingen en training
+            </h2>
+            <h3
+              class="c6"
+            >
+              Opleidingen
+            </h3>
+            <ul
+              class="c5"
+            />
+            <h3
+              class="c6"
+            >
+              Training
+            </h3>
+            <ul
+              class="c5"
+            />
+          </div>
+        </div>
+        <div
+          class="c2"
+        >
+          <div
+            class="c3"
+          >
+            <h2
+              class="c4"
+              size="2"
+            >
+              Talen
+            </h2>
+            <table
+              class="c7"
+            >
+              <thead>
+                <tr>
+                  <th
+                    style="width: 20%;"
+                  >
+                    Taal
+                  </th>
+                  <th>
+                    Gesproken
+                  </th>
+                  <th>
+                    Geschreven
+                  </th>
+                </tr>
+              </thead>
+              <tbody />
+            </table>
+          </div>
+        </div>
+        <div
+          class="c2"
+        >
+          <div
+            class="c3"
+          >
+            <h2
+              class="c4"
+              size="2"
+            >
+              Hobbies
+            </h2>
+            <ul
+              class="c5"
+            />
+          </div>
+        </div>
+        <div
+          class="c2"
+        >
+          <div
+            class="c3"
+          >
+            <h2
+              class="c4"
+              size="2"
+            >
+              Carrière
+            </h2>
+          </div>
+        </div>
+        <div
+          class="c8"
+        />
+      </main>
+      <footer
+        class="c9"
+      >
+        <div
+          class="c10"
+        >
+          <div
+            class="c3"
           >
             <div
-              class=""
+              class="c11"
             >
               Copyright © 
               2019
