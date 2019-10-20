@@ -15,8 +15,45 @@
     "Print productie",
     "Desktop publishing"
   ],
-  "technical": ["ReactJS", "JavaScript", "PHP", "CakePHP", "MySQL", "Quartz Composer", "OOP", "AWS", "React Native", "Symfony"],
-  "software": ["Adobe Creative Suite", "Sketch", "Postman", "XCode"],
+  "technical": [
+    "ReactJS",
+    "JavaScript",
+    "GraphQL",
+    "RESTful API development",
+    "PHP",
+    "CakePHP",
+    "MySQL",
+    "Quartz Composer",
+    "OOP",
+    "AWS",
+    "React Native",
+    "Symfony",
+    "HTML",
+    "CSS",
+    "Ansible",
+    "Git",
+    "Docker",
+    "Nginx",
+    "Apache",
+    "OSX",
+    "Ubuntu",
+    "Bash",
+    "NPM",
+    "Yarn",
+    "Arduino",
+    "Raspberry Pi",
+    "Electron"
+  ],
+  "software": [
+    "Visual Studio Code",
+    "Sketch",
+    "Postman",
+    "XCode",
+    "Adobe Illustrator",
+    "Adobe Photoshop",
+    "Adobe inDesign",
+    "Quartz Composer"
+  ],
   "education": [
     "Architecturale Kunsten, KSI Sint-Lucas, Gent",
     "Fotografie, Academie voor Schone Kunsten, Sint-Niklaas",
@@ -49,7 +86,7 @@
       "native": false
     }
   ],
-  "hobbies": ["Duiken", "Skiën", "Fotograferen", "Knutselen met electronica, Arduino"],
+  "hobbies": ["Duiken", "Skiën", "Fotograferen", "Experimenteren met electronica", "Arduino", "Raspberry Pi", "IoT"],
   "career": [
     {
       "client": "Cammaert Design",
