@@ -7,20 +7,34 @@ import { Container } from 'components/atoms/Container';
 import { ScreenReaderOnly } from 'components/atoms/ScreenReaderOnly';
 import { ProjectContainer } from 'components/organisms/Project';
 
+import { Title } from 'components/atoms/Title';
+
 import { JobProps } from './Job.types';
 
 import S from './Job.style';
 
-const Job: React.FC<JobProps> = ({ client, id, startDate, endDate, description, roles, projects, displayProjects = false }) => (
+const Job: React.FC<JobProps> = ({
+  client,
+  id,
+  startDate,
+  endDate,
+  description,
+  roles,
+  projects,
+  displayProjects = false,
+  headerLevel = 1,
+}) => (
   <Container>
     <S.Job>
       <S.TitleContainer>
-        <S.Title as="h3">{client}</S.Title>
+        <Title size={3} header={headerLevel}>
+          {client}
+        </Title>
       </S.TitleContainer>
       {roles && (
         <>
           <ScreenReaderOnly>
-            <h4>Rollen</h4>
+            <Title header={headerLevel + 1}>Rollen</Title>
           </ScreenReaderOnly>
           <S.Roles>
             {roles.map(role => (
@@ -45,7 +59,7 @@ const Job: React.FC<JobProps> = ({ client, id, startDate, endDate, description, 
       {description && (
         <>
           <ScreenReaderOnly>
-            <h4>Omschrijving</h4>
+            <Title header={headerLevel + 1}>Omschrijving</Title>
           </ScreenReaderOnly>
           <S.Description>{description}</S.Description>
         </>
@@ -53,10 +67,10 @@ const Job: React.FC<JobProps> = ({ client, id, startDate, endDate, description, 
       {displayProjects && projects && (
         <>
           <ScreenReaderOnly>
-            <h4>Projecten</h4>
+            <Title header={headerLevel + 1}>Projecten</Title>
           </ScreenReaderOnly>
           {projects.map(({ name }) => (
-            <ProjectContainer key={name} client={id} project={name} />
+            <ProjectContainer key={name} client={id} project={name} headerLevel={headerLevel + 1} />
           ))}
         </>
       )}

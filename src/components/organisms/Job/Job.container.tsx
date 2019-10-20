@@ -7,7 +7,7 @@ import Job from './Job';
 
 import { JobContainerProps } from './Job.types';
 
-const JobContainer: React.FC<JobContainerProps> = ({ id }) => {
+const JobContainer: React.FC<JobContainerProps> = ({ id, headerLevel }) => {
   // const location = useLocation();
   const job = getJob(id);
   if (job) {
@@ -25,6 +25,7 @@ const JobContainer: React.FC<JobContainerProps> = ({ id }) => {
         roles={roles}
         projects={projects}
         displayProjects
+        headerLevel={headerLevel}
       />
     );
   }

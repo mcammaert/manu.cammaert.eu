@@ -32,11 +32,29 @@ exports[`Job default props should match the snapshot 1`] = `
   overflow: hidden;
 }
 
-.c7 {
+.c8 {
   font-size: 1em;
   font-weight: 400;
   line-height: 1.776889em;
   color: #262830;
+}
+
+.c4 {
+  font-size: 2.3685930369999997em;
+  line-height: 1.333em;
+  font-weight: 200;
+  color: #262830;
+  margin: 0;
+  margin-bottom: 0.42219156451906775em;
+}
+
+.c7 {
+  font-size: 1.333em;
+  line-height: 1.333em;
+  font-weight: 200;
+  color: #262830;
+  margin: 0;
+  margin-bottom: 0.42219156451906775em;
 }
 
 .c2 {
@@ -58,15 +76,6 @@ exports[`Job default props should match the snapshot 1`] = `
   margin-bottom: 1em;
 }
 
-.c4 {
-  font-size: 2.3685930369999997em;
-  line-height: 1.333em;
-  font-weight: 200;
-  color: #262830;
-  margin: 0;
-  margin-bottom: 0.42219156451906775em;
-}
-
 .c5 {
   font-size: 1em;
   font-weight: 400;
@@ -75,7 +84,7 @@ exports[`Job default props should match the snapshot 1`] = `
   display: block;
 }
 
-.c8 {
+.c9 {
   white-space: pre-line;
   margin-bottom: 1.776889em;
 }
@@ -93,11 +102,12 @@ exports[`Job default props should match the snapshot 1`] = `
         <div
           class="c3"
         >
-          <h3
+          <h1
             class="c4"
+            size="3"
           >
             Lorem ipsum
-          </h3>
+          </h1>
         </div>
         <span
           class="c5"
@@ -116,12 +126,15 @@ exports[`Job default props should match the snapshot 1`] = `
         <div
           class="c6"
         >
-          <h4>
+          <h2
+            class="c7"
+            size="1"
+          >
             Omschrijving
-          </h4>
+          </h2>
         </div>
         <div
-          class="c7 c8"
+          class="c8 c9"
         >
           Lorem ipsum dolor sit amet
         </div>

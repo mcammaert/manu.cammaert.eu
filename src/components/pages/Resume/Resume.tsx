@@ -14,8 +14,8 @@ const Resume: React.FC<ResumeProps> = ({ jobs }) => {
       <Default>
         <main>
           <h2>Carrière</h2>
-          {jobs.map(({ client, id }) => (
-            <JobContainer key={id} id={id} />
+          {jobs.map(({ id }) => (
+            <JobContainer key={id} id={id} headerLevel={3} />
           ))}
         </main>
       </Default>

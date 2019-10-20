@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { modularScale, rem, rgba } from 'polished';
 
 import { Copy } from 'components/atoms/Copy';
+import { Title as TitleComponent } from 'components/atoms/Title';
 
 export const Project = styled.div`
   border-top: 1px solid ${({ theme }) => rgba(theme.colors.primary, 0.08)};
@@ -10,13 +11,8 @@ export const Project = styled.div`
   margin-bottom: ${modularScale(0)};
 `;
 
-export const Title = styled.div`
-  font-size: ${modularScale(1)};
-  line-height: ${modularScale(1)};
-  font-weight: 200;
+export const Title = styled(TitleComponent)`
   color: ${({ theme }) => theme.colors.secondary};
-  margin: 0;
-  margin-bottom: ${modularScale(-4)};
 `;
 
 export const Roles = styled.ul`

@@ -10,8 +10,10 @@ export interface JobProps {
   roles?: Roles;
   projects?: Array<{ name: string }>;
   displayProjects?: boolean;
+  headerLevel?: number;
 }
 
 export interface JobContainerProps {
   id: string;
+  headerLevel?: number;
 }
