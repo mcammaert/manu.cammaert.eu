@@ -25,8 +25,8 @@ export const GlobalStyle = createGlobalStyle<GlobalStyleProps>`
     font-family: 'Open Sans', sans-serif;
     width: 100vw;
     height: 100vh;
-    background: ${colors.white};
-    background-image: linear-gradient(162deg, ${rgba(colors.accent3, 0.35)} 0%, ${rgba(colors.primary10, 0.2)} 82%);
+    background: ${colors.snow};
+    background-image: linear-gradient(162deg, ${rgba(colors.accent3, 0.15)} 0%, ${rgba(colors.primary10, 0.2)} 82%);
     background-attachment: fixed;    
     color: ${colors.black};
   }
