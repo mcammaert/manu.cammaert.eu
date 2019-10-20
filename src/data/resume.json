@@ -273,7 +273,7 @@
         {
           "name": "Sportoase",
           "roles": ["Designer", "Front-end Developer", "Back-end Developer"],
-          "description": "Het bouwen van innovatieve software voor vrijetijdscentra (OpenSport).\nOpenSport is een softwareplatform gebouwd als totaaloplossing voor Sportoase (POS, CRM, abonnementen, toegangscontrole, zwemschool… )\nConnectie met randapparatuur (betaalterminal, pos display, kassalade, thermische printer) met behulp van Raspberry Pi.",
+          "description": "Het bouwen van innovatieve software voor vrijetijdscentra (OpenSport).\nOpenSport is een softwareplatform gebouwd als totaaloplossing voor Sportoase (POS, CRM, abonnementen, toegangscontrole, zwemschool…)\nConnectie met randapparatuur (betaalterminal, pos display, kassalade, thermische printer) met behulp van Raspberry Pi.",
           "technologies": ["AngularJS", "Symfony", "Raspberry Pi"]
         },
         {
