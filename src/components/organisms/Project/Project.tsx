@@ -16,7 +16,9 @@ const Project: React.FC<ProjectProps> = ({ name, roles, description, technologie
         </ScreenReaderOnly>
         <S.Roles as="ul">
           {roles.map(role => (
-            <S.Role as="li">{role}</S.Role>
+            <S.Role key={role} as="li">
+              {role}
+            </S.Role>
           ))}
         </S.Roles>
       </>
@@ -28,7 +30,7 @@ const Project: React.FC<ProjectProps> = ({ name, roles, description, technologie
         </ScreenReaderOnly>
         <S.Technologies as="ul">
           {technologies.map(technology => (
-            <S.Technology as="li">
+            <S.Technology key={technology} as="li">
               <S.Label>{technology}</S.Label>
             </S.Technology>
           ))}
@@ -51,7 +53,7 @@ const Project: React.FC<ProjectProps> = ({ name, roles, description, technologie
         </ScreenReaderOnly>
         <S.References as="ul">
           {references.map(reference => (
-            <S.Reference as="li">
+            <S.Reference key={reference} as="li">
               <a href={reference}>{reference.replace(/^http(s)?:\/\//i, '')}</a>
             </S.Reference>
           ))}

@@ -1,4 +1,4 @@
-import { Roles, Projects } from 'api/resume';
+import { Roles } from 'api/resume';
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface JobProps {

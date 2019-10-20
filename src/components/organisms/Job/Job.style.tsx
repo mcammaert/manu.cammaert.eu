@@ -5,7 +5,6 @@ import { Copy } from 'components/atoms/Copy';
 
 export const Job = styled.div`
   margin-bottom: ${modularScale(4)};
-  //padding-left: ${({ theme }) => rem(theme.margin)};
   position: relative;
   &:before {
     content: '';
@@ -27,24 +26,23 @@ export const Title = styled.div`
   line-height: ${modularScale(1)};
   font-weight: 200;
   color: ${({ theme }) => theme.colors.primary};
-  display: inline;
+  margin: 0;
+  margin-bottom: ${modularScale(-3)};
 `;
 
 export const Date = styled.div`
   font-size: ${modularScale(0)};
-  line-height: ${modularScale(2)};
   font-weight: 400;
   color: ${({ theme }) => theme.colors.primary};
-  display: inline;
-  margin-left: ${modularScale(-1)};
+  margin-bottom: ${modularScale(2)};
+  display: block;
 `;
 
-export const DateSegment = styled.span`
-  white-space: nowrap;
-`;
+export const DateSegment = styled.span``;
 
 export const Description = styled(Copy)`
   white-space: pre-line;
+  margin-bottom: ${modularScale(2)};
 `;
 
 export const Label = styled.span``;
@@ -53,7 +51,7 @@ export const Roles = styled.ul`
   display: block;
   margin: 0;
   padding: 0;
-  margin-bottom: ${modularScale(1)};
+  margin-bottom: ${modularScale(-1)};
   font-size: ${modularScale(1)};
   font-weight: 300;
 `;

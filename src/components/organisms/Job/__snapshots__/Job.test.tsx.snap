@@ -23,7 +23,7 @@ exports[`Job default props should match the snapshot 1`] = `
   padding-right: 0.9375rem;
 }
 
-.c7 {
+.c6 {
   position: absolute;
   left: -10000px;
   top: auto;
@@ -32,7 +32,7 @@ exports[`Job default props should match the snapshot 1`] = `
   overflow: hidden;
 }
 
-.c8 {
+.c7 {
   font-size: 1em;
   font-weight: 400;
   line-height: 1.776889em;
@@ -63,24 +63,21 @@ exports[`Job default props should match the snapshot 1`] = `
   line-height: 1.333em;
   font-weight: 200;
   color: #262830;
-  display: inline;
+  margin: 0;
+  margin-bottom: 0.42219156451906775em;
 }
 
 .c5 {
   font-size: 1em;
-  line-height: 1.776889em;
   font-weight: 400;
   color: #262830;
-  display: inline;
-  margin-left: 0.7501875468867217em;
+  margin-bottom: 1.776889em;
+  display: block;
 }
 
-.c6 {
-  white-space: nowrap;
-}
-
-.c9 {
+.c8 {
   white-space: pre-line;
+  margin-bottom: 1.776889em;
 }
 
 <div>
@@ -101,32 +98,30 @@ exports[`Job default props should match the snapshot 1`] = `
           >
             Lorem ipsum
           </h3>
-          <span
-            class="c5"
-          >
-            <span
-              class="c6"
-            >
-              Van 
-              20 oktober 2019
-            </span>
-            <span
-              class="c6"
-            >
-               tot 
-              20 oktober 2019
-            </span>
-          </span>
         </div>
+        <span
+          class="c5"
+        >
+          <span
+            class=""
+          >
+            Van 20 oktober 2019
+          </span>
+          <span
+            class=""
+          >
+             tot 20 oktober 2019
+          </span>
+        </span>
         <div
-          class="c7"
+          class="c6"
         >
           <h4>
             Omschrijving
           </h4>
         </div>
         <div
-          class="c8 c9"
+          class="c7 c8"
         >
           Lorem ipsum dolor sit amet
         </div>

@@ -56,11 +56,11 @@ export const Technology = styled.span`
 export const Label = styled.span`
   font-size: ${modularScale(-1)};
   color: ${({ theme }) => theme.colors.secondary};
-  background-color: ${({ theme }) => rgba(theme.colors.secondaryInvert, 0.8)};
+  background-color: ${({ theme }) => rgba(theme.colors.secondary, 0.05)};
   border-radius: 1em;
   padding: 0.3em 1em;
   font-weight: 400;
-  box-shadow: 0 1px 6px ${({ theme }) => rgba(theme.colors.secondary, 0.1)};
+  box-shadow: 0 1px 6px ${({ theme }) => rgba(theme.colors.secondary, 0.01)};
   text-transform: uppercase;
 `;
 
@@ -68,12 +68,12 @@ export const References = styled.span`
   margin-left: ${({ theme }) => rem(theme.margin)};
   padding: 0;
   margin-bottom: ${modularScale(1)};
+  line-height: ${modularScale(3)};
 `;
 
 export const Reference = styled.span`
   list-style: none;
   font-size: ${modularScale(0)};
-  line-height: ${modularScale(2)};
   color: ${({ theme }) => theme.colors.secondary};
   margin-right: ${modularScale(0)};
   border-radius: 5px;
