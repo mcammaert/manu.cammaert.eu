@@ -84,6 +84,11 @@
           "description": "Diverse projecten in opdracht"
         },
         {
+          "name": "Bioshop De Zonnebloem",
+          "description": "Website en mailinglijst",
+          "technologies": ["Html", "CSS", "JQuery", "MailChimp"]
+        },
+        {
           "name": "Keukens Bogaert",
           "description": "Fotograferen"
         },
@@ -94,6 +99,7 @@
         {
           "name": "BDR Construct",
           "description": "Ontwerpen logo en huisstijl\nOntwerpen & ontwikkelen website",
+          "technologies": ["Html", "CSS"],
           "references": ["https://www.bdr-construct.be"]
         },
         {
@@ -106,19 +112,23 @@
         },
         {
           "name": "Elran Diamonds",
-          "description": "Ontwerpen & ontwikkelen website"
+          "description": "Ontwerpen & ontwikkelen website",
+          "technologies": ["CakePHP", "HTML", "CSS", "JQuery"]
         },
         {
           "name": "Venture Europe",
-          "description": "Ontwerpen & ontwikkelen website"
+          "description": "Ontwerpen & ontwikkelen website",
+          "technologies": ["CakePHP", "HTML", "CSS", "JQuery"]
         },
         {
           "name": "WE-travel",
-          "description": "Ontwerpen logo & huisstijl\nOntwerpen & ontwikkelen website"
+          "description": "Ontwerpen logo & huisstijl\nOntwerpen & ontwikkelen website",
+          "technologies": ["CakePHP", "HTML", "CSS", "JQuery"]
         },
         {
           "name": "Crivaco",
-          "description": "Ontwerpen & ontwikkelen website"
+          "description": "Ontwerpen & ontwikkelen website",
+          "technologies": ["WordPress", "JQuery"]
         }
       ]
     },
@@ -219,12 +229,14 @@
         {
           "name": "Website Tele Ticket Service",
           "roles": ["Web designer"],
-          "description": "Ontwerpen website Tele Ticket Service"
+          "description": "Ontwerpen website Tele Ticket Service",
+          "technologies": ["Html", "CSS", "JQuery"]
         },
         {
           "name": "Night of the Proms",
           "roles": ["Web designer ", "Front-end Developer", "Back-end Developer", "Fotograaf"],
-          "description": "Ontwerpen website Night of the Proms\nLayout van affiches, brochures, VIP drukwerk…\nFotoreportages."
+          "description": "Ontwerpen website Night of the Proms\nLayout van affiches, brochures, VIP drukwerk…\nFotoreportages.",
+          "technologies": ["WordPress", "JQuery"]
         },
         {
           "name": "PSE Belgium",
@@ -268,7 +280,8 @@
           "name": "Vlaamse Kunstcollectie - Abstract Modernisme",
           "roles": ["UI Designer"],
           "description": "Designen van de nieuwe website voor abstract modernisme.",
-          "references": ["http://abstractmodernisme.vlaamsekunstcollectie.be"]
+          "references": ["http://abstractmodernisme.vlaamsekunstcollectie.be"],
+          "technologies": ["Sketch"]
         },
         {
           "name": "Agentschap voor Natuur en Bos",
@@ -285,7 +298,8 @@
           "name": "Vlaamse Instituut voor Archivering",
           "roles": ["UI Designer"],
           "description": "Design wireframes en mockups van het archief voor onderwijs en het archief",
-          "references": ["https://onderwijs.hetarchief.be"]
+          "references": ["https://onderwijs.hetarchief.be"],
+          "technologies": ["Sketch", "Drupal"]
         }
       ]
     },
@@ -334,55 +348,58 @@
             "https://www.stubru.be",
             "https://www.klara.be"
           ],
-          "technologies": ["ReactJS", "AngularJS", "Drupal"]
+          "technologies": ["ReactJS", "JavaScript", "AngularJS", "Drupal"]
         },
         {
           "name": "Klara Top 100",
           "roles": ["Designer", "Front-end Developer"],
-          "technologies": ["ReactJS"]
+          "technologies": ["ReactJS", "JavaScript", "PHP"]
         },
         {
           "name": "Radio 1 Groot Dictee",
           "roles": ["Designer", "Front-end Developer"],
-          "technologies": ["ReactJS"]
+          "technologies": ["ReactJS", "JavaScript"]
         },
         {
           "name": "Lang Zullen We Lezen",
           "roles": ["Designer", "Front-end Developer", "Back-end Developer"],
-          "technologies": ["ReactJS", "FeathersJS", "GraphQL"],
+          "technologies": ["ReactJS", "FeathersJS", "GraphQL", "JavaScript"],
           "tags": ["Microservices"]
         },
         {
           "name": "Restyling MNM",
           "roles": ["Designer", "Front-end Developer"],
-          "references": ["https://www.mnm.be"]
+          "references": ["https://www.mnm.be"],
+          "technologies": ["AngularJS", "JavaScript", "Drupal"]
         },
         {
           "name": "Restyling GenerationM",
           "roles": ["Designer", "Front-end Developer"],
-          "references": ["https://www.generationm.be"]
+          "references": ["https://www.generationm.be"],
+          "technologies": ["AngularJS", "JavaScript", "Drupal"]
         },
         {
           "name": "Restyling Stubru",
           "roles": ["Designer", "Front-end Developer"],
-          "references": ["https://www.stubru.be"]
+          "references": ["https://www.stubru.be"],
+          "technologies": ["AngularJS", "JavaScript", "Drupal"]
         },
         {
           "name": "Hitlijsten",
           "roles": ["Designer", "Front-end Developer", "Back-end Developer"],
           "description": "Een nieuwe generieke stemtool voor de hitlijsten stemmingen.",
           "references": ["https://deafrekening.stubru.be", "https://greatestswitch.stubru.be"],
-          "technologies": ["ReactJS", "GraphQL", "AWS Amplify", "AWS Lambda"]
+          "technologies": ["ReactJS", "JavaScript", "GraphQL", "AWS Amplify", "AWS Lambda"]
         },
         {
           "name": "VRT audioplayer",
           "roles": ["Designer", "Front-end Developer"],
-          "technologies": ["ReactJS"]
+          "technologies": ["ReactJS", "JavaScript"]
         },
         {
           "name": "VRT audioeditor",
           "roles": ["Designer", "Front-end Developer"],
-          "technologies": ["ReactJS"]
+          "technologies": ["ReactJS", "JavaScript"]
         }
       ]
     }
