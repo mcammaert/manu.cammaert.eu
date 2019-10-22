@@ -6,6 +6,11 @@
     "address": "Bormte 156, 9190 Stekene, België",
     "email": "manu@cammaert.eu"
   },
+  "links": [
+    { "type": "github", "name": "GitHub", "uri": "hhttps://github.com/mcammaert" },
+    { "type": "linkedin", "name": "LinkedIn", "uri": "https://www.linkedin.com/in/manucammaert" },
+    { "type": "facebook", "name": "FaceBook", "uri": "https://www.facebook.com/manu.cammaert" }
+  ],
   "skills": [
     "Front-end design/development",
     "Back-end development",
@@ -21,12 +26,14 @@
     "GraphQL",
     "RESTful API development",
     "PHP",
-    "CakePHP",
     "MySQL",
     "Quartz Composer",
     "OOP",
     "AWS",
+    "AWS CloudFormation",
+    "troposphere",
     "React Native",
+    "CakePHP",
     "Symfony",
     "HTML",
     "CSS",
@@ -42,7 +49,9 @@
     "Yarn",
     "Arduino",
     "Raspberry Pi",
-    "Electron"
+    "Electron",
+    "OAuth2",
+    "JWT"
   ],
   "software": [
     "Visual Studio Code",
@@ -379,7 +388,7 @@
     {
       "client": "VRT",
       "id": "vrt",
-      "description": "Bij VRT maak ik als designer & react developer deel uit van het team dat verantwoordelijk is voor alle digitale touchpoints van alle radio netten.",
+      "description": "Bij VRT maak ik als designer & react developer deel uit van het team dat verantwoordelijk is voor alle digitale touchpoints van alle radio merken van VRT.",
       "startDate": "2017-06-12",
       "roles": ["React developer", "Front-end developer"],
       "projects": [
@@ -436,7 +445,7 @@
           "roles": ["Designer", "Front-end Developer", "Back-end Developer"],
           "description": "Een nieuwe generieke stemtool voor de hitlijsten stemmingen.",
           "references": ["https://deafrekening.stubru.be", "https://greatestswitch.stubru.be"],
-          "technologies": ["ReactJS", "JavaScript", "GraphQL", "AWS Amplify", "AWS Lambda"]
+          "technologies": ["ReactJS", "JavaScript", "GraphQL", "AWS Amplify", "AWS Lambda", "AWS Cloudformation", "troposphere"]
         },
         {
           "name": "VRT audioplayer",
