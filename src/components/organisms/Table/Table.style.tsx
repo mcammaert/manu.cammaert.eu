@@ -16,6 +16,7 @@ export const Table = styled.table`
     font-size: ${modularScale(0)};
     border-top: 1px solid ${({ theme }) => rgba(theme.colors.primary, 0.08)};
     padding: ${modularScale(-2)};
+    font-weight: 400;
   }
 `;
 

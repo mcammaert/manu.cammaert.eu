@@ -11,7 +11,7 @@ export const Progress = styled.div`
 `;
 
 export const Bar = styled.div<BarProps>`
-  background-color: ${({ theme }) => theme.colors.secondary}
+  background-color: ${({ theme }) => rgba(theme.colors.secondary, 0.8)};
   border-radius: 3em;
   width: ${({ progress }) => `${progress * 100}%`};
   height: ${modularScale(0)};

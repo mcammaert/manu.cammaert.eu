@@ -10,7 +10,6 @@ export const Label = styled.div`
   padding: 0.25em 1em;
   font-weight: 400;
   box-shadow: 0 1px 6px ${({ theme }) => rgba(theme.colors.secondary, 0.01)};
-  text-transform: uppercase;
 `;
 
 export default { Label };

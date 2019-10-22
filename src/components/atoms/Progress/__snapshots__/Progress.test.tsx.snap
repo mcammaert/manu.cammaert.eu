@@ -7,7 +7,7 @@ exports[`Progress default props should match the snapshot 1`] = `
 }
 
 .c1 {
-  background-color: #0d5189;
+  background-color: rgba(13,81,137,0.8);
   border-radius: 3em;
   width: 60%;
   height: 1em;
