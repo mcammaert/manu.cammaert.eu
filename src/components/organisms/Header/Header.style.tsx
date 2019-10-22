@@ -1,7 +1,13 @@
 import styled from 'styled-components';
+import { modularScale } from 'polished';
+
+import { Title as StyledTitle } from 'components/atoms/Title';
 
 export const Header = styled.div`
-  //position: absolute;
+  margin-top: ${modularScale(6)};
+  margin-bottom: ${modularScale(2)};
 `;
 
-export default { Header };
+export const Title = styled(StyledTitle)``;
+
+export default { Header, Title };

@@ -1,7 +1,46 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Router default props should match the snapshot 1`] = `
+.c3 {
+  font-size: 2.3685930369999997em;
+  line-height: 1.333em;
+  font-weight: 200;
+  color: #262830;
+  margin: 0;
+  margin-bottom: 0.42219156451906775em;
+}
+
 .c0 {
+  margin-top: 5.610232974924883em;
+  margin-bottom: 1.776889em;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.c2 {
+  width: 100vw;
+  max-width: 800px;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.c4 {
   position: absolute;
 }
 
@@ -10,42 +49,53 @@ exports[`Router default props should match the snapshot 1`] = `
     class=""
   >
     <div
-      class=""
+      class="c0"
     >
-      <h1>
-        Manu Cammaert
-      </h1>
-      <ul
-        class=""
+      <div
+        class="c1"
       >
-        <li>
-          <a
-            href="/"
+        <div
+          class="c2"
+        >
+          <h1
+            class="c3 "
+            size="3"
           >
-            Home
-          </a>
-        </li>
-        <li>
-          <a
-            href="/cv"
+            Manu Cammaert
+          </h1>
+          <ul
+            class=""
           >
-            Curriculum Vitae
-          </a>
-        </li>
-        <li>
-          <a
-            href="/contact"
-          >
-            Contact
-          </a>
-        </li>
-      </ul>
+            <li>
+              <a
+                href="/"
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="/cv"
+              >
+                Curriculum Vitae
+              </a>
+            </li>
+            <li>
+              <a
+                href="/contact"
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
     <div
       style="opacity: 0; transform: translate3d(-20px, 0, 0);"
     >
       <div
-        class="c0"
+        class="c4"
       >
         <p>
           Laden...
