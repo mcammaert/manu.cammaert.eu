@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, MouseEvent } from 'react';
 
-import { Link } from 'react-router-dom';
 import { useLockBodyScroll } from 'react-use';
 import { useTransition, animated } from 'react-spring';
+import { useHistory } from 'react-router-dom';
 
 import { ScreenReaderOnly } from 'components/atoms/ScreenReaderOnly';
 import { NavigationProps } from './Navigation.types';
@@ -24,6 +24,14 @@ const Navigation: React.FC<NavigationProps> = () => {
     leave: { opacity: 0 },
   });
 
+  const clickLinkHandler = (event: MouseEvent<HTMLAnchorElement>) => {
+    setShowNavigation(false);
+    // event.preventDefault();
+    // debugger;
+    // console.log(event.currentTarget);
+    // // history.push(event.currentTarget.attributes.href.value);
+  };
+
   return (
     <S.NavigationContainer>
       <S.ToggleButton onClick={onToggleNavigationHandler}>
@@ -36,17 +44,23 @@ const Navigation: React.FC<NavigationProps> = () => {
             item && (
               <animated.div key={key} style={props}>
                 <S.Navigation>
-                  <ul>
-                    <li>
-                      <Link to="/">Home</Link>
-                    </li>
-                    <li>
-                      <Link to="/cv">Curriculum Vitae</Link>
-                    </li>
-                    <li>
-                      <Link to="/contact">Contact</Link>
-                    </li>
-                  </ul>
+                  <S.Menu>
+                    <S.MenuItem>
+                      <S.Link to="/" onClick={clickLinkHandler}>
+                        Home
+                      </S.Link>
+                    </S.MenuItem>
+                    <S.MenuItem>
+                      <S.Link to="/cv?blablabla" onClick={clickLinkHandler}>
+                        Curriculum Vitae
+                      </S.Link>
+                    </S.MenuItem>
+                    <S.MenuItem>
+                      <S.Link to="/contact" onClick={clickLinkHandler}>
+                        Contact
+                      </S.Link>
+                    </S.MenuItem>
+                  </S.Menu>
                 </S.Navigation>
               </animated.div>
             ),

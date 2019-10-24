@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import { rem, rgba } from 'polished';
+import { rem, rgba, modularScale } from 'polished';
+import { Link as LinkComponent } from 'react-router-dom';
 
 import { MenuIcon as StyledMenuIcon } from 'components/atoms/MenuIcon';
 
@@ -15,9 +16,6 @@ export const Navigation = styled.div`
   z-index: 999;
   transition: all 100ms;
   backdrop-filter: blur(2px);
-  ul {
-    padding: 4em;
-  }
 `;
 
 export const ToggleButton = styled.button`
@@ -36,6 +34,35 @@ export const ToggleButton = styled.button`
   padding: 0;
 `;
 
+export const Link = styled(LinkComponent)`
+  text-decoration: none;
+  display: block;
+  padding: ${modularScale(0)};
+  font-size: ${modularScale(0)};
+  transition: all 200ms;
+  font-weight: 400;
+  color: ${({ theme }) => theme.colors.primary};
+  background: ${({ theme }) => theme.colors.primaryInvert};
+  &:hover {
+    box-shadow: 0 1px 18px ${({ theme }) => rgba(theme.colors.primary, 0.08)};
+  }
+  &:active {
+    color: ${({ theme }) => theme.colors.primaryInvert};
+    background: ${({ theme }) => theme.colors.primary};
+  }
+`;
+
+export const Menu = styled.ul`
+  list-style: none;
+  padding: ${modularScale(0)};
+  padding-top: ${modularScale(6)};
+`;
+
+export const MenuItem = styled.li`
+  list-style: none;
+  margin-bottom: ${modularScale(-1)};
+`;
+
 export const MenuIcon = styled(StyledMenuIcon)``;
 
-export default { NavigationContainer, Navigation, ToggleButton, MenuIcon };
+export default { NavigationContainer, Navigation, ToggleButton, Link, Menu, MenuItem, MenuIcon };
