@@ -8,14 +8,16 @@ import { HeaderProps } from './Header.types';
 import S from './Header.style';
 
 const Header: React.FC<HeaderProps> = () => (
-  <S.Header>
-    <Container>
-      <S.Title size={3} header={1}>
-        Manu Cammaert
-      </S.Title>
-      <Navigation />
-    </Container>
-  </S.Header>
+  <>
+    <S.Header>
+      <Container>
+        <S.Title size={3} header={1}>
+          Manu Cammaert
+        </S.Title>
+      </Container>
+    </S.Header>
+    <Navigation />
+  </>
 );
 
 export default Header;

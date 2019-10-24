@@ -30,13 +30,13 @@ const Router: React.FC<RouterProps> = () => {
   const location = useLocation();
 
   const transitions = useTransition(location, loc => loc.pathname, {
-    from: { opacity: 0, transform: 'translate3d(-20px, 0, 0)' },
-    enter: { opacity: 1, transform: 'translate3d(0, 0, 0)' },
-    leave: { opacity: 0, transform: 'translate3d(-20px, 0, 0)' },
+    from: { opacity: 0 },
+    enter: { opacity: 1 },
+    leave: { opacity: 0 },
   });
 
   return (
-    <S.Router>
+    <>
       <GlobalStyle location={location.pathname} />
       <Header />
       {transitions.map(({ item, props, key }) => (
@@ -49,7 +49,7 @@ const Router: React.FC<RouterProps> = () => {
           </Switch>
         </animated.div>
       ))}
-    </S.Router>
+    </>
   );
 };
 
