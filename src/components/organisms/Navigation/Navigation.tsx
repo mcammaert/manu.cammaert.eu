@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import { Link } from 'react-router-dom';
+import { useLockBodyScroll } from 'react-use';
 import { useTransition, animated } from 'react-spring';
 
 import { ScreenReaderOnly } from 'components/atoms/ScreenReaderOnly';
@@ -14,6 +15,8 @@ const Navigation: React.FC<NavigationProps> = () => {
   const onToggleNavigationHandler = () => {
     setShowNavigation(!showNavigation);
   };
+
+  useLockBodyScroll(showNavigation);
 
   const transitions = useTransition(showNavigation, null, {
     from: { position: 'absolute', opacity: 0, zIndex: 999, left: 0, top: 0, width: '100vw', height: '100vh' },
