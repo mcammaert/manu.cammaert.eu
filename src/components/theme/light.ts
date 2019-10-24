@@ -24,7 +24,6 @@ export const GlobalStyle = createGlobalStyle<GlobalStyleProps>`
     -moz-osx-font-smoothing: grayscale;
     font-family: 'Open Sans', sans-serif;
     width: 100vw;
-    height: 100vh;
     background: ${colors.snow};
     background-image: linear-gradient(162deg, ${rgba(colors.accent3, 0.018)} 0%, ${rgba(colors.primary10, 0.1)} 82%);
     background-attachment: fixed;    
