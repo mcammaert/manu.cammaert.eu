@@ -12,8 +12,6 @@ import { Loading } from 'components/molecules/Loading';
 import { Error as ErrorPage } from 'components/pages/Error';
 import { RouterProps } from './Router.types';
 
-import S from './Router.style';
-
 const fallbackTimeout = 20;
 
 const Home = loadable(() => pMinDelay(import('components/pages/Home/Home'), fallbackTimeout), {

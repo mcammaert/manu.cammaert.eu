@@ -1,8 +1,7 @@
 import React, { useState, MouseEvent } from 'react';
 
 import { useLockBodyScroll } from 'react-use';
-import { useTransition, animated } from 'react-spring';
-import { useHistory } from 'react-router-dom';
+import { interpolate, useTransition, animated, useTrail } from 'react-spring';
 
 import { ScreenReaderOnly } from 'components/atoms/ScreenReaderOnly';
 import { NavigationProps } from './Navigation.types';
@@ -24,13 +23,38 @@ const Navigation: React.FC<NavigationProps> = () => {
     leave: { opacity: 0 },
   });
 
+  const links = [
+    {
+      title: 'Home',
+      uri: '/',
+    },
+    {
+      title: 'Curriculum Vitae',
+      uri: '/cv',
+    },
+    {
+      title: 'Contact',
+      uri: '/contact',
+    },
+  ];
+
+  const trail = useTrail(links.length, {
+    opacity: showNavigation ? 1 : 0,
+    x: showNavigation ? 0 : 20,
+  });
+
   const clickLinkHandler = (event: MouseEvent<HTMLAnchorElement>) => {
     setShowNavigation(false);
-    // event.preventDefault();
-    // debugger;
-    // console.log(event.currentTarget);
-    // // history.push(event.currentTarget.attributes.href.value);
   };
+
+  const AnimatedMenuItem = animated(({ title, uri, ...rest }: { title: string; uri: string; style: any }) => (
+    // eslint-disable-next-line react/jsx-props-no-spreading
+    <S.MenuItem {...rest}>
+      <S.Link to={uri} onClick={clickLinkHandler}>
+        {title}
+      </S.Link>
+    </S.MenuItem>
+  ));
 
   return (
     <S.NavigationContainer>
@@ -45,21 +69,17 @@ const Navigation: React.FC<NavigationProps> = () => {
               <animated.div key={key} style={props}>
                 <S.Navigation>
                   <S.Menu>
-                    <S.MenuItem>
-                      <S.Link to="/" onClick={clickLinkHandler}>
-                        Home
-                      </S.Link>
-                    </S.MenuItem>
-                    <S.MenuItem>
-                      <S.Link to="/cv?blablabla" onClick={clickLinkHandler}>
-                        Curriculum Vitae
-                      </S.Link>
-                    </S.MenuItem>
-                    <S.MenuItem>
-                      <S.Link to="/contact" onClick={clickLinkHandler}>
-                        Contact
-                      </S.Link>
-                    </S.MenuItem>
+                    {trail.map(({ x, ...rest }, index) => {
+                      const { uri, title } = links[index];
+                      return (
+                        <AnimatedMenuItem
+                          key={uri}
+                          uri={uri}
+                          title={title}
+                          style={{ ...rest, transform: interpolate([x], (value: number) => `translate3d(0,${value}px,0)`) }}
+                        />
+                      );
+                    })}
                   </S.Menu>
                 </S.Navigation>
               </animated.div>
