@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { modularScale, rgba } from 'polished';
+import { rem, rgba } from 'polished';
 
 import { MenuIcon as StyledMenuIcon } from 'components/atoms/MenuIcon';
 
@@ -23,16 +23,17 @@ export const Navigation = styled.div`
 export const ToggleButton = styled.button`
   position: fixed;
   -webkit-transform: translateZ(0);
-  left: 18px
-  top: 18px;
+  left: ${({ theme }) => rem(theme.margin)};
+  top: ${({ theme }) => rem(theme.margin)};
   width: 44px;
   height: 44px;
   z-index: 1000;
   border: none;
-  background-color: transparent;
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0;
 `;
 
 export const MenuIcon = styled(StyledMenuIcon)``;
