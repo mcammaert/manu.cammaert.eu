@@ -48,7 +48,7 @@ exports[`Job default props should match the snapshot 1`] = `
   font-weight: 200;
   color: #262830;
   margin: 0;
-  margin-bottom: 0.42219156451906775em;
+  margin-bottom: 0.4221915645190677em;
 }
 
 .c7 {
@@ -57,11 +57,11 @@ exports[`Job default props should match the snapshot 1`] = `
   font-weight: 200;
   color: #262830;
   margin: 0;
-  margin-bottom: 0.42219156451906775em;
+  margin-bottom: 0.4221915645190677em;
 }
 
 .c2 {
-  margin-bottom: 3.157334518321em;
+  margin-bottom: 3.1573345183209995em;
   position: relative;
 }
 

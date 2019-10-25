@@ -29,8 +29,8 @@ exports[`Footer default props should match the snapshot 1`] = `
 .c0 {
   position: absolute;
   font-size: 0.7501875468867217em;
-  padding-top: 5.610232974924883em;
-  padding-bottom: 5.610232974924883em;
+  padding-top: 5.610232974924882em;
+  padding-bottom: 5.610232974924882em;
   width: 100vw;
 }
 
