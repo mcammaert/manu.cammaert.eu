@@ -8,11 +8,19 @@ import { useTransition, animated } from 'react-spring';
 import { GlobalStyle } from 'components/theme/light';
 import { Header } from 'components/organisms/Header';
 
-import { Loading } from 'components/molecules/Loading';
+import { Loading as LoadingComponent } from 'components/molecules/Loading';
+import { Container } from 'components/atoms/Container';
+
 import { Error as ErrorPage } from 'components/pages/Error';
 import { RouterProps } from './Router.types';
 
 const fallbackTimeout = 20;
+
+const Loading = () => (
+  <Container>
+    <LoadingComponent />
+  </Container>
+);
 
 const Home = loadable(() => pMinDelay(import('components/pages/Home/Home'), fallbackTimeout), {
   fallback: <Loading />,
@@ -23,6 +31,7 @@ const Resume = loadable(() => pMinDelay(import('components/pages/Resume/Resume.c
 const Contact = loadable(() => pMinDelay(import('components/pages/Contact/Contact'), fallbackTimeout), {
   fallback: <Loading />,
 });
+const PageNotFound = () => <ErrorPage message="Pagina niet gevonden." />;
 
 const Router: React.FC<RouterProps> = () => {
   const location = useLocation();
@@ -43,7 +52,7 @@ const Router: React.FC<RouterProps> = () => {
             <Route path="/cv" component={Resume} />
             <Route path="/contact" component={Contact} />
             <Route path="/" exact component={Home} />
-            <Route path="*" component={ErrorPage} />
+            <Route path="*" component={PageNotFound} />
           </Switch>
         </animated.div>
       ))}

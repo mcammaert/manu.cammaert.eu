@@ -7,11 +7,11 @@ exports[`Router default props should match the snapshot 1`] = `
   font-weight: 200;
   color: #262830;
   margin: 0;
-  margin-bottom: 0.42219156451906775em;
+  margin-bottom: 0.4221915645190677em;
 }
 
 .c0 {
-  margin-top: 5.610232974924883em;
+  margin-top: 5.610232974924882em;
   margin-bottom: 1.776889em;
 }
 
@@ -40,18 +40,18 @@ exports[`Router default props should match the snapshot 1`] = `
   margin-bottom: 0;
 }
 
-.c5 {
+.c6 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
 }
 
-.c6 {
+.c7 {
   stroke: #262830;
   stroke-width: 2;
 }
 
-.c4 {
+.c5 {
   position: fixed;
   -webkit-transform: translateZ(0);
   left: 0.9375rem;
@@ -76,7 +76,7 @@ exports[`Router default props should match the snapshot 1`] = `
   padding: 0;
 }
 
-.c7 {
+.c4 {
   position: absolute;
   left: -10000px;
   top: auto;
@@ -103,7 +103,11 @@ exports[`Router default props should match the snapshot 1`] = `
           class="c3 "
           size="3"
         >
-          Manu Cammaert
+          <div
+            class="c4"
+          >
+            Manu Cammaert
+          </div>
         </h1>
       </div>
     </div>
@@ -112,29 +116,29 @@ exports[`Router default props should match the snapshot 1`] = `
     class=""
   >
     <button
-      class="c4"
+      class="c5"
     >
       <svg
-        class="c5 "
+        class="c6 "
         height="20"
         width="20"
       >
         <line
-          class="c6"
+          class="c7"
           x1="1"
           x2="19"
           y1="1"
           y2="1"
         />
         <line
-          class="c6"
+          class="c7"
           x1="0.5"
           x2="14"
           y1="10"
           y2="10"
         />
         <line
-          class="c6"
+          class="c7"
           x1="1"
           x2="19"
           y1="19"
@@ -142,7 +146,7 @@ exports[`Router default props should match the snapshot 1`] = `
         />
       </svg>
       <div
-        class="c7"
+        class="c4"
       >
         Toon navigatie
       </div>
@@ -152,11 +156,19 @@ exports[`Router default props should match the snapshot 1`] = `
     style="opacity: 0; transform: translate3d(-20px, 0, 0);"
   >
     <div
-      class="c8"
+      class="c1"
     >
-      <p>
-        Laden...
-      </p>
+      <div
+        class="c2"
+      >
+        <div
+          class="c8"
+        >
+          <p>
+            Laden...
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
