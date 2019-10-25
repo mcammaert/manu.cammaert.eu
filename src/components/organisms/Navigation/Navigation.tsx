@@ -43,7 +43,7 @@ const Navigation: React.FC<NavigationProps> = () => {
     x: showNavigation ? 0 : 20,
   });
 
-  const clickLinkHandler = (event: MouseEvent<HTMLAnchorElement>) => {
+  const clickLinkHandler = () => {
     setShowNavigation(false);
   };
 
