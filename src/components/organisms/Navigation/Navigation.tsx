@@ -71,7 +71,7 @@ const Navigation: React.FC<NavigationProps> = () => {
     leave: { opacity: 0, transform: 'translateY(-10px)' },
   });
 
-  useChain(showNavigation ? [springRef, transRef] : [transRef, springRef]);
+  useChain(showNavigation ? [springRef, transRef] : [transRef, springRef], showNavigation ? [0, 0.25] : [0, 0.45]);
 
   const clickLinkHandler = () => {
     setShowNavigation(false);
