@@ -1,4 +1,4 @@
-import React, { useState, MouseEvent } from 'react';
+import React, { useState } from 'react';
 
 import { useLockBodyScroll } from 'react-use';
 import { interpolate, useTransition, animated, useTrail } from 'react-spring';
