@@ -1,20 +1,17 @@
 import styled from 'styled-components';
 import { rem, rgba, modularScale } from 'polished';
 import { Link as LinkComponent } from 'react-router-dom';
+import { animated } from 'react-spring';
 
 import { MenuIcon as StyledMenuIcon } from 'components/atoms/MenuIcon';
 
 export const NavigationContainer = styled.div``;
 
-export const Navigation = styled.div`
+export const Navigation = styled(animated.div)`
   background-color: ${({ theme }) => rgba(theme.colors.secondaryInvert, 0.85)};
   position: fixed;
-  top: 0
-  left: 0;
-  right: 0;
-  bottom: 0;
   z-index: 999;
-  transition: all 100ms;
+  transition: backdrop-filter 100ms;
   backdrop-filter: blur(2px);
 `;
 
@@ -58,7 +55,7 @@ export const Menu = styled.ul`
   padding-top: ${modularScale(6)};
 `;
 
-export const MenuItem = styled.li`
+export const MenuItem = styled(animated.li)`
   list-style: none;
   margin-bottom: ${modularScale(-1)};
 `;

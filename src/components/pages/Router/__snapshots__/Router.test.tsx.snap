@@ -51,6 +51,16 @@ exports[`Router default props should match the snapshot 1`] = `
   stroke-width: 2;
 }
 
+.c8 {
+  background-color: rgba(244,245,247,0.85);
+  position: fixed;
+  z-index: 999;
+  -webkit-transition: backdrop-filter 100ms;
+  transition: backdrop-filter 100ms;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+}
+
 .c5 {
   position: fixed;
   -webkit-transform: translateZ(0);
@@ -76,6 +86,12 @@ exports[`Router default props should match the snapshot 1`] = `
   padding: 0;
 }
 
+.c9 {
+  list-style: none;
+  padding: 1em;
+  padding-top: 5.610232974924882em;
+}
+
 .c4 {
   position: absolute;
   left: -10000px;
@@ -85,7 +101,7 @@ exports[`Router default props should match the snapshot 1`] = `
   overflow: hidden;
 }
 
-.c8 {
+.c10 {
   position: absolute;
 }
 
@@ -151,6 +167,22 @@ exports[`Router default props should match the snapshot 1`] = `
         Toon navigatie
       </div>
     </button>
+    <div
+      class="c8"
+      style="opacity: 0; top: 0px; right: 0px; bottom: 768px; left: 0px;"
+    >
+      <div
+        class="c1"
+      >
+        <div
+          class="c2"
+        >
+          <ul
+            class="c9"
+          />
+        </div>
+      </div>
+    </div>
   </div>
   <div
     style="opacity: 0; transform: translate3d(-20px, 0, 0);"
@@ -162,7 +194,7 @@ exports[`Router default props should match the snapshot 1`] = `
         class="c2"
       >
         <div
-          class="c8"
+          class="c10"
         >
           <p>
             Laden...
