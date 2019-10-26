@@ -134,7 +134,7 @@ const Resume: React.FC<ResumeProps> = ({
           </Container>
           <Container margin>
             <Title size={2} header={2}>
-              Carrière
+              Loopbaan
             </Title>
           </Container>
           <S.Jobs>
