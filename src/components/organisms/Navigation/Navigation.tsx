@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 
 import { useLockBodyScroll } from 'react-use';
-import { interpolate, useTransition, animated, useTrail, ReactSpringHook, useChain } from 'react-spring';
+import { interpolate, useTransition, animated, useTrail, ReactSpringHook, useChain, config } from 'react-spring';
 
 import { ScreenReaderOnly } from 'components/atoms/ScreenReaderOnly';
 import { NavigationProps } from './Navigation.types';
@@ -43,6 +43,7 @@ const Navigation: React.FC<NavigationProps> = () => {
     enter: { opacity: 1 },
     leave: { opacity: 0 },
     ref: transRef,
+    config: config.stiff,
   });
 
   const trailRef = useRef<ReactSpringHook>(basicRef);
@@ -50,9 +51,11 @@ const Navigation: React.FC<NavigationProps> = () => {
     opacity: showNavigation ? 1 : 0,
     x: showNavigation ? 0 : 20,
     ref: trailRef,
+    trail: 100 / links.length,
+    config: config.stiff,
   });
 
-  useChain(showNavigation ? [transRef, trailRef] : [trailRef, transRef]);
+  useChain(showNavigation ? [transRef, trailRef] : [trailRef, transRef], [0, showNavigation ? 0.1 : 0.9]);
 
   const clickLinkHandler = () => {
     setShowNavigation(false);
