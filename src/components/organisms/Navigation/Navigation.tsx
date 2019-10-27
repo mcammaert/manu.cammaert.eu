@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 
-import { useLockBodyScroll, useWindowSize } from 'react-use';
+import { useLockBodyScroll, useWindowSize, useKey } from 'react-use';
 import { useSpring, useTransition, ReactSpringHook, useChain, config } from 'react-spring';
 import FocusLock from 'react-focus-lock';
 
@@ -32,6 +32,8 @@ const Navigation: React.FC<NavigationProps> = () => {
   const onToggleNavigationHandler = () => {
     setShowNavigation(!showNavigation);
   };
+
+  useKey('Escape', () => setShowNavigation(false));
 
   const { height } = useWindowSize();
 
