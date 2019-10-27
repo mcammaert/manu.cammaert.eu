@@ -29,6 +29,12 @@ export const ToggleButton = styled.button`
   align-items: center;
   justify-content: center;
   padding: 0;
+  cursor: pointer;
+  transition: all 400ms;
+  &:hover,
+  &:focus {
+    background: ${({ theme }) => rgba(theme.colors.primary, 0.035)};
+  }
 `;
 
 export const Link = styled(LinkComponent)`
