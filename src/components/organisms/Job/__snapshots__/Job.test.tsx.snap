@@ -40,6 +40,7 @@ exports[`Job default props should match the snapshot 1`] = `
   font-weight: 400;
   line-height: 1.776889em;
   color: #262830;
+  margin-bottom: 0;
 }
 
 .c4 {
