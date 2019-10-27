@@ -26,20 +26,45 @@ exports[`Home default props should match the snapshot 1`] = `
   margin-bottom: 0;
 }
 
+.c4 {
+  font-size: 1.333em;
+  font-weight: 400;
+  line-height: 1.776889em;
+  color: #262830;
+  margin-bottom: 1em;
+}
+
+.c5 {
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.776889em;
+  color: #262830;
+  margin-bottom: 1em;
+}
+
+.c6 {
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.776889em;
+  color: #262830;
+  margin-bottom: 0;
+}
+
 .c1 {
   width: 100vw;
 }
 
-.c4 {
+.c7 {
   position: absolute;
   padding-top: 5.610232974924882em;
   padding-bottom: 5.610232974924882em;
   width: 100vw;
 }
 
-.c5 {
+.c8 {
   color: rgba(38,40,48,0.6);
-  font-size: 0.7501875468867217em;
+  font-size: 0.8060785933275142em;
+  line-height: 1.776889em;
 }
 
 .c0 {
@@ -59,13 +84,78 @@ exports[`Home default props should match the snapshot 1`] = `
         <div
           class="c3"
         >
-          <p>
-            Home
-          </p>
+          <div
+            class="c4"
+            font-weight="400"
+            size="1"
+          >
+            Goede morgen
+            , ik ben Manu Cammaert, front-end developer / designer met een passie voor
+            <span>
+               
+            </span>
+            <abbr
+              title="User Interface"
+            >
+              UI
+            </abbr>
+            <span>
+               
+            </span>
+            design en fotografie.
+          </div>
+          <div
+            class="c5"
+            font-weight="400"
+          >
+            Mijn specialisatie ligt momenteel bij React, waarin ook deze website is gebouwd. Je kan de
+            <span>
+               
+            </span>
+            <a
+              aria-label="broncode van deze website"
+              href="https://github.com/mcammaert/manu.cammaert.eu"
+            >
+              broncode ervan
+            </a>
+            <span>
+               
+            </span>
+            hier bekijken.
+          </div>
+          <div
+            class="c6"
+            font-weight="400"
+          >
+            Bekijk hier
+            <span>
+               
+            </span>
+            <a
+              href="/cv"
+            >
+              mijn 
+              <abbr
+                title="curriculum vitae"
+              >
+                cv
+              </abbr>
+            </a>
+            <span>
+               
+            </span>
+            of 
+            <a
+              href="/contact"
+            >
+              contacteer me
+            </a>
+             voor vragen.
+          </div>
         </div>
       </div>
       <footer
-        class="c4"
+        class="c7"
       >
         <div
           class="c2"
@@ -74,10 +164,10 @@ exports[`Home default props should match the snapshot 1`] = `
             class="c3"
           >
             <div
-              class="c5"
+              class="c8"
             >
               Copyright © 
-              2019
+              2018
                Manu Cammaert, alle rechten voorbehouden.
             </div>
           </div>
