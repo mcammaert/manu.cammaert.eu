@@ -64,9 +64,9 @@ const Navigation: React.FC<NavigationProps> = () => {
     config: config.stiff,
   });
 
-  const transRef = useRef<ReactSpringHook>(basicRef);
-  const transitions = useTransition(showNavigation ? links : [], item => item.uri, {
-    ref: transRef,
+  const menuItemsRef = useRef<ReactSpringHook>(basicRef);
+  const menuItems = useTransition(showNavigation ? links : [], item => item.uri, {
+    ref: menuItemsRef,
     config: config.stiff,
     trail: 400 / links.length,
     from: { opacity: 0, transform: 'translateY(-10px)' },
@@ -74,7 +74,7 @@ const Navigation: React.FC<NavigationProps> = () => {
     leave: { opacity: 0, transform: 'translateY(-10px)' },
   });
 
-  useChain(showNavigation ? [springRef, transRef] : [transRef, springRef], showNavigation ? [0, 0.25] : [0, 0.45]);
+  useChain(showNavigation ? [springRef, menuItemsRef] : [menuItemsRef, springRef], showNavigation ? [0, 0.25] : [0, 0.45]);
 
   const clickLinkHandler = () => {
     setShowNavigation(false);
@@ -90,7 +90,7 @@ const Navigation: React.FC<NavigationProps> = () => {
         <S.Navigation style={spring} aria-modal={showNavigation} role={showNavigation ? 'dialog' : ''}>
           <Container>
             <S.Menu>
-              {transitions.map(({ item, key, props }) => (
+              {menuItems.map(({ item, key, props }) => (
                 <S.MenuItem key={key} style={props}>
                   <S.Link to={item.uri} onClick={clickLinkHandler}>
                     {item.title}
