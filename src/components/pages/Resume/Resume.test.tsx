@@ -4,7 +4,7 @@ import { cleanup } from '@testing-library/react';
 import 'jest-styled-components';
 
 import { renderComponent } from 'testing/react-testing-library';
-import theme from 'components/theme/light';
+import { lightTheme } from 'components/theme';
 
 import Resume from './Resume';
 
@@ -26,7 +26,7 @@ describe('Resume', () => {
           hobbies={[]}
         />
       );
-      const { container } = renderComponent({ theme, component });
+      const { container } = renderComponent({ theme: lightTheme, component });
       expect(container).toMatchSnapshot();
     });
   });

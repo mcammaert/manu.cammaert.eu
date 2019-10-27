@@ -4,8 +4,9 @@ import { Switch, Route, useLocation } from 'react-router-dom';
 import loadable from '@loadable/component';
 import pMinDelay from 'p-min-delay';
 import { useTransition, animated } from 'react-spring';
+import { useCookies } from 'react-cookie';
 
-import { GlobalStyle } from 'components/theme/light';
+import { GlobalStyle } from 'components/theme';
 import { Header } from 'components/organisms/Header';
 
 import { Loading as LoadingComponent } from 'components/molecules/Loading';
@@ -36,6 +37,8 @@ const PageNotFound = () => <ErrorPage message="Pagina niet gevonden." />;
 const Router: React.FC<RouterProps> = () => {
   const location = useLocation();
 
+  const [{ theme }] = useCookies(['theme']);
+
   const transitions = useTransition(location, loc => loc.pathname, {
     from: { opacity: 0, transform: 'translate3d(-20px, 0, 0)' },
     enter: { opacity: 1, transform: 'translate3d(0, 0, 0)' },
@@ -44,7 +47,7 @@ const Router: React.FC<RouterProps> = () => {
 
   return (
     <>
-      <GlobalStyle location={location.pathname} />
+      <GlobalStyle light={theme !== 'dark'} />
       <Header />
       {transitions.map(({ item, props, key }) => (
         <animated.div key={key} style={props}>

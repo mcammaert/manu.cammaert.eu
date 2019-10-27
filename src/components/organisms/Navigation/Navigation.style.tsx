@@ -24,7 +24,7 @@ export const ToggleButton = styled.button`
   height: 44px;
   z-index: 1000;
   border: none;
-  background-color: white;
+  background: ${({ theme }) => theme.colors.primaryInvert};
   display: flex;
   align-items: center;
   justify-content: center;

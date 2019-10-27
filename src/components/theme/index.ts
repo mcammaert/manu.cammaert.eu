@@ -4,7 +4,7 @@ import { rgba } from 'polished';
 import { colors } from './colors';
 
 export interface GlobalStyleProps {
-  readonly location: string;
+  readonly light: boolean;
 }
 
 // const backgroundColor = (location: string) => (location === '/' ? colors.oxfordBlue : colors.fuzzyWuzzy);
@@ -24,14 +24,15 @@ export const GlobalStyle = createGlobalStyle<GlobalStyleProps>`
     -moz-osx-font-smoothing: grayscale;
     font-family: 'Open Sans', sans-serif;
     width: 100vw;
-    background: ${colors.snow};
+    background: ${({ light }) => (light ? colors.snow : colors.black)};
     background-image: linear-gradient(162deg, ${rgba(colors.accent3, 0.018)} 0%, ${rgba(colors.primary10, 0.1)} 82%);
     background-attachment: fixed;    
-    color: ${colors.black};
+    color: ${({ light }) => (light ? colors.black : colors.snow)};
+    transition: all 800ms;
   }
 `;
 
-const theme = {
+export const lightTheme = {
   margin: 15,
   colors: {
     primary: colors.charcoal,
@@ -45,4 +46,16 @@ const theme = {
   },
 };
 
-export default theme;
+export const darkTheme = {
+  margin: 15,
+  colors: {
+    primary: colors.snow,
+    primaryInvert: colors.charcoal,
+    secondary: colors.primary30,
+    secondaryInvert: colors.primary60,
+    tertiary: colors.secondary30,
+    tertiaryInvert: colors.secondary80,
+    copy: colors.white,
+    copyInvert: colors.charcoal,
+  },
+};

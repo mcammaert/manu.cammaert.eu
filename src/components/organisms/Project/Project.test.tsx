@@ -5,7 +5,7 @@ import 'jest-styled-components';
 import styled from 'styled-components';
 
 import { renderComponent } from 'testing/react-testing-library';
-import theme from 'components/theme/light';
+import { lightTheme } from 'components/theme';
 
 import Project from './Project';
 
@@ -15,7 +15,7 @@ describe('Project', () => {
   describe('default props', () => {
     it('should match the snapshot', () => {
       const component = <Project name="Lorem ipsum" />;
-      const { container } = renderComponent({ theme, component });
+      const { container } = renderComponent({ theme: lightTheme, component });
       expect(container).toMatchSnapshot();
     });
   });
