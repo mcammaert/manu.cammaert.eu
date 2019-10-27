@@ -81,7 +81,7 @@ const Navigation: React.FC<NavigationProps> = () => {
   return (
     <S.NavigationContainer>
       <FocusLock disabled={!showNavigation}>
-        <S.ToggleButton onClick={onToggleNavigationHandler} aria-label={showNavigation ? 'Verberg het menu' : 'Toon het menu'}>
+        <S.ToggleButton onClick={onToggleNavigationHandler}>
           <S.MenuIcon checked={showNavigation} />
           <ScreenReaderOnly>{showNavigation ? 'Verberg het menu' : 'Toon het menu'}</ScreenReaderOnly>
         </S.ToggleButton>
