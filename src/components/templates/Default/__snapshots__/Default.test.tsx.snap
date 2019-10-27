@@ -3,14 +3,14 @@
 exports[`Default default props should match the snapshot 1`] = `
 .c1 {
   position: absolute;
-  font-size: 0.7501875468867217em;
   padding-top: 5.610232974924882em;
   padding-bottom: 5.610232974924882em;
   width: 100vw;
 }
 
 .c4 {
-  color: rgba(38,40,48,0.45);
+  color: rgba(38,40,48,0.6);
+  font-size: 0.7501875468867217em;
 }
 
 .c2 {
