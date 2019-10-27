@@ -10,7 +10,8 @@ export const Footer = styled.footer`
 
 export const CopyrightNotice = styled.div`
   color: ${({ theme }) => rgba(theme.colors.copy, 0.6)};
-  font-size: ${modularScale(-1)};
+  font-size: ${modularScale(-0.75)};
+  line-height: ${modularScale(2)};
 `;
 
 export default { Footer, CopyrightNotice };

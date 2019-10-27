@@ -35,7 +35,8 @@ exports[`Footer default props should match the snapshot 1`] = `
 
 .c3 {
   color: rgba(38,40,48,0.6);
-  font-size: 0.7501875468867217em;
+  font-size: 0.8060785933275142em;
+  line-height: 1.776889em;
 }
 
 <div>
