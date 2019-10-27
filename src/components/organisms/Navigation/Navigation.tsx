@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 
 import { useLockBodyScroll, useWindowSize } from 'react-use';
 import { useSpring, useTransition, ReactSpringHook, useChain, config } from 'react-spring';
+import FocusLock from 'react-focus-lock';
 
 import { ScreenReaderOnly } from 'components/atoms/ScreenReaderOnly';
 import { Container } from 'components/atoms/Container';
@@ -79,23 +80,25 @@ const Navigation: React.FC<NavigationProps> = () => {
 
   return (
     <S.NavigationContainer>
-      <S.ToggleButton onClick={onToggleNavigationHandler}>
-        <S.MenuIcon checked={showNavigation} />
-        <ScreenReaderOnly>{showNavigation ? 'Verberg navigatie' : 'Toon navigatie'}</ScreenReaderOnly>
-      </S.ToggleButton>
-      <S.Navigation style={spring}>
-        <Container>
-          <S.Menu>
-            {transitions.map(({ item, key, props }) => (
-              <S.MenuItem key={key} style={props}>
-                <S.Link to={item.uri} onClick={clickLinkHandler}>
-                  {item.title}
-                </S.Link>
-              </S.MenuItem>
-            ))}
-          </S.Menu>
-        </Container>
-      </S.Navigation>
+      <FocusLock disabled={!showNavigation}>
+        <S.ToggleButton onClick={onToggleNavigationHandler} aria-label={showNavigation ? 'Verberg het menu' : 'Toon het menu'}>
+          <S.MenuIcon checked={showNavigation} />
+          <ScreenReaderOnly>{showNavigation ? 'Verberg het menu' : 'Toon het menu'}</ScreenReaderOnly>
+        </S.ToggleButton>
+        <S.Navigation style={spring} aria-modal={showNavigation} role={showNavigation ? 'dialog' : ''}>
+          <Container>
+            <S.Menu>
+              {transitions.map(({ item, key, props }) => (
+                <S.MenuItem key={key} style={props}>
+                  <S.Link to={item.uri} onClick={clickLinkHandler}>
+                    {item.title}
+                  </S.Link>
+                </S.MenuItem>
+              ))}
+            </S.Menu>
+          </Container>
+        </S.Navigation>
+      </FocusLock>
     </S.NavigationContainer>
   );
 };
