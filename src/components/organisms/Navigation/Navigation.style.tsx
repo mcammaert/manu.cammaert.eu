@@ -12,7 +12,7 @@ export const Navigation = styled(animated.div)`
   position: fixed;
   z-index: 999;
   transition: backdrop-filter 100ms;
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(3px);
 `;
 
 export const ToggleButton = styled.button`
@@ -33,7 +33,7 @@ export const ToggleButton = styled.button`
   transition: all 400ms;
   &:hover,
   &:focus {
-    background: ${({ theme }) => rgba(theme.colors.primary, 0.035)};
+    background: ${({ theme }) => rgba(theme.colors.primary, 0.1)};
   }
 `;
 
@@ -57,7 +57,7 @@ export const Link = styled(LinkComponent)`
 
 export const Menu = styled.ul`
   list-style: none;
-  padding: ${modularScale(0)};
+  padding: 0;
   padding-top: ${modularScale(6)};
 `;
 

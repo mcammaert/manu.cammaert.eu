@@ -25,7 +25,7 @@ export const GlobalStyle = createGlobalStyle<GlobalStyleProps>`
     font-family: 'Open Sans', sans-serif;
     width: 100vw;
     background: ${({ light }) => (light ? colors.snow : colors.black)};
-    background-image: linear-gradient(162deg, ${rgba(colors.accent3, 0.018)} 0%, ${rgba(colors.primary10, 0.1)} 82%);
+    background-image: linear-gradient(162deg, ${rgba(colors.accent3, 0.045)} 0%, ${rgba(colors.primary10, 0.1)} 82%);
     background-attachment: fixed;    
     color: ${({ light }) => (light ? colors.black : colors.snow)};
     transition: all 800ms;

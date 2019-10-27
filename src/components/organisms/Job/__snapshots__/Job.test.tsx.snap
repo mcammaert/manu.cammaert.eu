@@ -139,6 +139,7 @@ exports[`Job default props should match the snapshot 1`] = `
         </div>
         <div
           class="c8 c9"
+          font-weight="400"
         >
           Lorem ipsum dolor sit amet
         </div>
