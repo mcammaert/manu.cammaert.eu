@@ -21,12 +21,16 @@
     "Desktop publishing"
   ],
   "technical": [
-    "ReactJS",
+    "React",
+    "React hooks",
+    "Styled Components",
+    "Next.js",
     "JavaScript",
     "GraphQL",
     "Responsive webdesign",
     "Toegankelijkheid",
     "RESTful API development",
+    "SSR",
     "PHP",
     "MySQL",
     "Quartz Composer",
