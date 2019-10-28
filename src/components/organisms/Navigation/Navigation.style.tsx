@@ -33,7 +33,7 @@ export const ToggleButton = styled.button`
   transition: all 400ms;
   &:hover,
   &:focus {
-    background: ${({ theme }) => rgba(theme.colors.primary, 0.1)};
+    box-shadow: 0 1px 18px ${({ theme }) => rgba(theme.colors.primary, 0.08)};
   }
 `;
 
