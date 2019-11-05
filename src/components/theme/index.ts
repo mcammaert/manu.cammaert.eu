@@ -22,8 +22,8 @@ export const GlobalStyle = createGlobalStyle<GlobalStyleProps>`
   body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-family: 'Open Sans', sans-serif;
-    width: 100vw;
+    font-family: 'Nunito Sans', sans-serif;
+    width: 100vw; 
     background: ${({ light }) => (light ? colors.snow : colors.black)};
     background-image: linear-gradient(162deg, ${rgba(colors.accent3, 0.045)} 0%, ${rgba(colors.primary10, 0.1)} 82%);
     background-attachment: fixed;    

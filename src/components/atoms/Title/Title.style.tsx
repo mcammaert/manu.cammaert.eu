@@ -7,7 +7,7 @@ interface TitleProps {
 
 export const Title = styled.div<TitleProps>`
   font-size: ${({ size }) => modularScale(size)};
-  line-height: ${modularScale(1)};
+  line-height: ${modularScale(0)};
   font-weight: 200;
   color: ${({ theme }) => theme.colors.primary};
   margin: 0;
