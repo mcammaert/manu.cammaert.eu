@@ -3,7 +3,7 @@
 exports[`Project default props should match the snapshot 1`] = `
 .c1 {
   font-size: 1.333em;
-  line-height: 1.333em;
+  line-height: 1em;
   font-weight: 200;
   color: #262830;
   margin: 0;

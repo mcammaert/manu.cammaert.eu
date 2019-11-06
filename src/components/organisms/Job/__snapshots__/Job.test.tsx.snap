@@ -37,7 +37,7 @@ exports[`Job default props should match the snapshot 1`] = `
 
 .c8 {
   font-size: 1em;
-  font-weight: 400;
+  font-weight: 200;
   line-height: 1.776889em;
   color: #262830;
   margin-bottom: 0;
@@ -45,7 +45,7 @@ exports[`Job default props should match the snapshot 1`] = `
 
 .c4 {
   font-size: 1.776889em;
-  line-height: 1.333em;
+  line-height: 1em;
   font-weight: 200;
   color: #262830;
   margin: 0;
@@ -54,7 +54,7 @@ exports[`Job default props should match the snapshot 1`] = `
 
 .c7 {
   font-size: 1.333em;
-  line-height: 1.333em;
+  line-height: 1em;
   font-weight: 200;
   color: #262830;
   margin: 0;
@@ -139,7 +139,7 @@ exports[`Job default props should match the snapshot 1`] = `
         </div>
         <div
           class="c8 c9"
-          font-weight="400"
+          font-weight="200"
         >
           Lorem ipsum dolor sit amet
         </div>

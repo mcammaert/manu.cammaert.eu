@@ -3,8 +3,8 @@ import { rgba, modularScale } from 'polished';
 
 export const Footer = styled.footer`
   position: absolute;
-  padding-top: ${modularScale(6)};
-  padding-bottom: ${modularScale(6)};
+  padding-top: ${modularScale(4)};
+  padding-bottom: ${modularScale(4)};
   width: 100vw;
 `;
 

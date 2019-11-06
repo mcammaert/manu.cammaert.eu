@@ -5,7 +5,6 @@ import 'styled-components';
 declare module 'styled-components' {
   export interface DefaultTheme {
     margin: number;
-
     colors: {
       primary: string;
       primaryInvert: string;

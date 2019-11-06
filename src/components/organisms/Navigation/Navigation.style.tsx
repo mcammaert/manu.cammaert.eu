@@ -63,7 +63,7 @@ export const Menu = styled.ul`
 
 export const MenuItem = styled(animated.li)`
   list-style: none;
-  margin-bottom: ${modularScale(-1)};
+  margin-bottom: ${modularScale(0)};
 `;
 
 export const MenuIcon = styled(StyledMenuIcon)``;

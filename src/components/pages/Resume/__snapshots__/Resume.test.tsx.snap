@@ -7,8 +7,8 @@ exports[`Resume default props should match the snapshot 1`] = `
 
 .c9 {
   position: absolute;
-  padding-top: 5.610232974924882em;
-  padding-bottom: 5.610232974924882em;
+  padding-top: 3.1573345183209995em;
+  padding-bottom: 3.1573345183209995em;
   width: 100vw;
 }
 
@@ -61,7 +61,7 @@ exports[`Resume default props should match the snapshot 1`] = `
 
 .c4 {
   font-size: 1.776889em;
-  line-height: 1.333em;
+  line-height: 1em;
   font-weight: 200;
   color: #262830;
   margin: 0;
@@ -70,7 +70,7 @@ exports[`Resume default props should match the snapshot 1`] = `
 
 .c6 {
   font-size: 1em;
-  line-height: 1.333em;
+  line-height: 1em;
   font-weight: 200;
   color: #262830;
   margin: 0;

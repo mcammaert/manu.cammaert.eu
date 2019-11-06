@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavigationItem default props should match the snapshot 1`] = `
+.c0 {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  font: inherit;
+  line-height: normal;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  -webkit-appearance: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  font-size: 1em;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  font-weight: 400;
+  color: #262830;
+  background: #FCFCFC;
+}
+
+.c0:hover:enabled {
+  cursor: pointer;
+  box-shadow: 0 1px 18px rgba(38,40,48,0.08);
+}
+
+.c0:active {
+  color: #FCFCFC;
+  background: #262830;
+}
+
+.c0:disabled {
+  cursor: default;
+  color: #F4F5F7;
+  background: #0d5189;
+}
+
+<div>
+  <button
+    class="c0"
+  />
+</div>
+`;

@@ -43,7 +43,7 @@ const Home: React.FC<HomeProps> = () => {
             design en fotografie.
           </Copy>
           <Copy margin>
-            Mijn specialisatie ligt momenteel bij React, waarin ook deze website is gebouwd. Je kan de
+            Mijn focus ligt momenteel bij React, waarin ook deze website is gebouwd. Je kan de
             <span> </span>
             <a href="https://github.com/mcammaert/manu.cammaert.eu" aria-label="broncode van deze website">
               broncode ervan

@@ -28,7 +28,7 @@ exports[`Home default props should match the snapshot 1`] = `
 
 .c4 {
   font-size: 1.333em;
-  font-weight: 400;
+  font-weight: 200;
   line-height: 1.776889em;
   color: #262830;
   margin-bottom: 1em;
@@ -36,7 +36,7 @@ exports[`Home default props should match the snapshot 1`] = `
 
 .c5 {
   font-size: 1em;
-  font-weight: 400;
+  font-weight: 200;
   line-height: 1.776889em;
   color: #262830;
   margin-bottom: 1em;
@@ -44,7 +44,7 @@ exports[`Home default props should match the snapshot 1`] = `
 
 .c6 {
   font-size: 1em;
-  font-weight: 400;
+  font-weight: 200;
   line-height: 1.776889em;
   color: #262830;
   margin-bottom: 0;
@@ -56,8 +56,8 @@ exports[`Home default props should match the snapshot 1`] = `
 
 .c7 {
   position: absolute;
-  padding-top: 5.610232974924882em;
-  padding-bottom: 5.610232974924882em;
+  padding-top: 3.1573345183209995em;
+  padding-bottom: 3.1573345183209995em;
   width: 100vw;
 }
 
@@ -86,7 +86,7 @@ exports[`Home default props should match the snapshot 1`] = `
         >
           <div
             class="c4"
-            font-weight="400"
+            font-weight="200"
             size="1"
           >
             Goede morgen
@@ -106,9 +106,9 @@ exports[`Home default props should match the snapshot 1`] = `
           </div>
           <div
             class="c5"
-            font-weight="400"
+            font-weight="200"
           >
-            Mijn specialisatie ligt momenteel bij React, waarin ook deze website is gebouwd. Je kan de
+            Mijn focus ligt momenteel bij React, waarin ook deze website is gebouwd. Je kan de
             <span>
                
             </span>
@@ -125,7 +125,7 @@ exports[`Home default props should match the snapshot 1`] = `
           </div>
           <div
             class="c6"
-            font-weight="400"
+            font-weight="200"
           >
             Bekijk hier
             <span>
