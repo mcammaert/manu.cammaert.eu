@@ -27,7 +27,7 @@ const ThemeSwitcher: React.FC<ThemeSwitcherProps> = () => {
       <S.Label>Weergave</S.Label>
       <S.Buttons>
         <S.Button onClick={toggleLightThemeHandler} disabled={theme === 'light'}>
-          Light
+          Licht
         </S.Button>
         <S.Button onClick={toggleDarkThemeHandler} disabled={theme === 'dark'}>
           Donker

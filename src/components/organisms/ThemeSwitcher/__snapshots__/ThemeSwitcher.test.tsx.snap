@@ -85,7 +85,7 @@ exports[`ThemeSwitcher default props should match the snapshot 1`] = `
       <button
         class="c3 c4"
       >
-        Light
+        Licht
       </button>
       <button
         class="c3 c4"
