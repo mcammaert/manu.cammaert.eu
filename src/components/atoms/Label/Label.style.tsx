@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { modularScale, rgba } from 'polished';
 
 export const Label = styled.div`
-  font-size: ${modularScale(-1)};
+  font-size: ${modularScale(-0.5)};
   line-height: ${modularScale(2)};
   color: ${({ theme }) => theme.colors.secondary};
   background-color: ${({ theme }) => rgba(theme.colors.secondary, 0.05)};
