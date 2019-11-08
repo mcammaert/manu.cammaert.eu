@@ -16,7 +16,7 @@ export const Container = styled.div<ContainerProps>`
 
 export const Content = styled.div<ContentProps>`
   width: 100vw;
-  max-width: 800px;
+  max-width: 960px;
   padding-left: ${({ theme }) => rem(theme.margin)};
   padding-right: ${({ theme }) => rem(theme.margin)};
   margin-top: ${({ padding }) => (padding ? modularScale(1) : 0)};
