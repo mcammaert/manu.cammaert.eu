@@ -70,7 +70,7 @@ export const Reference = styled.span`
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 80%;
+  width: 90%;
 `;
 
 export default { Project, Title, Roles, Role, Description, Technologies, Technology, References, Reference };
