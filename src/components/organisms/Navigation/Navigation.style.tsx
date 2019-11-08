@@ -35,7 +35,6 @@ export const Navigation = styled(animated.div)`
   background-color: ${({ theme }) => rgba(lighten(0.08, theme.colors.primaryInvert), 0.9)};
   position: fixed;
   z-index: 999;
-  transition: backdrop-filter 100ms;
   backdrop-filter: blur(5px) grayscale(0.15);
   overflow: hidden;
 `;
