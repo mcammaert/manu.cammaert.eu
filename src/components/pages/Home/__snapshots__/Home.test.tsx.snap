@@ -19,7 +19,7 @@ exports[`Home default props should match the snapshot 1`] = `
 
 .c3 {
   width: 100vw;
-  max-width: 800px;
+  max-width: 960px;
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
   margin-top: 0;

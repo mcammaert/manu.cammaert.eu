@@ -8,7 +8,7 @@ import { ProjectProps } from './Project.types';
 
 import S from './Project.style';
 
-const Project: React.FC<ProjectProps> = ({ name, roles, description, technologies, references, headerLevel = 2 }) => (
+const Project: React.FC<ProjectProps> = ({ name, roles, description, technologies, references, headerLevel = 2, visible = true }) => (
   <S.Project>
     <S.Title size={1} header={headerLevel}>
       {name}
@@ -59,7 +59,9 @@ const Project: React.FC<ProjectProps> = ({ name, roles, description, technologie
         <S.References as="ul">
           {references.map(reference => (
             <S.Reference key={reference} as="li">
-              <a href={reference}>{reference.replace(/^http(s)?:\/\//i, '')}</a>
+              <a tabIndex={visible ? 0 : -1} href={reference}>
+                {reference.replace(/^http(s)?:\/\//i, '')}
+              </a>
             </S.Reference>
           ))}
         </S.References>

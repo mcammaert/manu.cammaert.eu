@@ -1,18 +1,43 @@
-import styled from 'styled-components';
-import { rem, rgba, modularScale } from 'polished';
+import styled, { css } from 'styled-components';
+import { rem, rgba, modularScale, lighten } from 'polished';
 import { Link as LinkComponent } from 'react-router-dom';
 import { animated } from 'react-spring';
 
+import { colors } from 'components/theme/colors';
 import { MenuIcon as StyledMenuIcon } from 'components/atoms/MenuIcon';
+
+export const button = css`
+  text-decoration: none;
+  display: block;
+  padding: ${modularScale(0)};
+  font-size: ${modularScale(0)};
+  font-weight: 400;
+  color: ${({ theme }) => theme.colors.primary};
+  background: ${({ theme }) => theme.colors.primaryInvert};
+  border-radius: 4px;
+  box-shadow: 0 1px 18px ${rgba(colors.black, 0.1)};
+  opacity: 0.85;
+  transition: all 300ms;
+  &:hover {
+    opacity: 1;
+    color: ${({ theme }) => theme.colors.secondary};
+    box-shadow: 0 1px 18px ${rgba(colors.black, 0.2)};
+  }
+  &:active {
+    color: ${({ theme }) => theme.colors.secondaryInvert};
+    background: ${({ theme }) => theme.colors.secondary};
+  }
+`;
 
 export const NavigationContainer = styled.div``;
 
 export const Navigation = styled(animated.div)`
-  background-color: ${({ theme }) => rgba(theme.colors.secondaryInvert, 0.85)};
+  background-color: ${({ theme }) => rgba(lighten(0.08, theme.colors.primaryInvert), 0.9)};
   position: fixed;
   z-index: 999;
   transition: backdrop-filter 100ms;
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(5px) grayscale(0.15);
+  overflow: hidden;
 `;
 
 export const ToggleButton = styled.button`
@@ -38,21 +63,7 @@ export const ToggleButton = styled.button`
 `;
 
 export const Link = styled(LinkComponent)`
-  text-decoration: none;
-  display: block;
-  padding: ${modularScale(0)};
-  font-size: ${modularScale(0)};
-  transition: all 200ms;
-  font-weight: 400;
-  color: ${({ theme }) => theme.colors.primary};
-  background: ${({ theme }) => theme.colors.primaryInvert};
-  &:hover {
-    box-shadow: 0 1px 18px ${({ theme }) => rgba(theme.colors.primary, 0.08)};
-  }
-  &:active {
-    color: ${({ theme }) => theme.colors.primaryInvert};
-    background: ${({ theme }) => theme.colors.primary};
-  }
+  ${button}
 `;
 
 export const Menu = styled.ul`
@@ -63,7 +74,7 @@ export const Menu = styled.ul`
 
 export const MenuItem = styled(animated.li)`
   list-style: none;
-  margin-bottom: ${modularScale(0)};
+  margin-bottom: ${modularScale(-1)};
 `;
 
 export const MenuIcon = styled(StyledMenuIcon)``;

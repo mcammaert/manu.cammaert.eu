@@ -5,7 +5,7 @@ import Project from './Project';
 
 import { ProjectContainerProps } from './Project.types';
 
-const ProjectContainer: React.FC<ProjectContainerProps> = ({ project: inputProject, client: inputClient, headerLevel }) => {
+const ProjectContainer: React.FC<ProjectContainerProps> = ({ project: inputProject, client: inputClient, headerLevel, visible }) => {
   const project = getProject(inputClient, inputProject);
   if (project) {
     const { name, roles, description, references, technologies, tags } = project;
@@ -18,6 +18,7 @@ const ProjectContainer: React.FC<ProjectContainerProps> = ({ project: inputProje
         technologies={technologies}
         tags={tags}
         headerLevel={headerLevel}
+        visible={visible}
       />
     );
   }

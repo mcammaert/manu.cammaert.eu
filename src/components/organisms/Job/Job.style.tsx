@@ -1,44 +1,33 @@
 import styled from 'styled-components';
-import { modularScale, rem } from 'polished';
+import { modularScale } from 'polished';
+import { animated } from 'react-spring';
 
 import { Copy } from 'components/atoms/Copy';
 
 export const Job = styled.div`
-  margin-bottom: ${modularScale(4)};
   position: relative;
-  &:before {
-    content: '';
-    position: absolute;
-    width: ${({ theme }) => rem(theme.margin)};
-    height: 4px;
-    top: -${modularScale(-2)};
-    left: -${({ theme }) => rem(theme.margin)};
-    background-color: ${({ theme }) => theme.colors.tertiary};
-  }
 `;
 
 export const TitleContainer = styled.div`
   margin-bottom: ${modularScale(0)};
 `;
 
-export const Title = styled.div`
-  font-size: ${modularScale(3)};
-  line-height: ${modularScale(1)};
-  font-weight: 200;
-  color: ${({ theme }) => theme.colors.primary};
-  margin: 0;
-  margin-bottom: ${modularScale(-3)};
-`;
-
 export const Date = styled.div`
   font-size: ${modularScale(0)};
+  line-height: ${modularScale(2)};
   font-weight: 400;
   color: ${({ theme }) => theme.colors.primary};
   margin-bottom: ${modularScale(2)};
   display: block;
 `;
 
-export const DateSegment = styled.span``;
+export const DateSegment = styled.span`
+  margin-right: ${modularScale(-3)};
+`;
+
+export const TimeAgo = styled.span`
+  display: inline-block;
+`;
 
 export const Description = styled(Copy)`
   white-space: pre-line;
@@ -70,4 +59,14 @@ export const Role = styled.li`
   }
 `;
 
-export default { Job, TitleContainer, Title, Date, DateSegment, Description, Label, Roles, Role };
+export const Projects = styled(animated.div)`
+  position: relative;
+  overflow: hidden;
+`;
+
+export const ProjectContainer = styled.div`
+  display: inline-block;
+  width: 100%;
+`;
+
+export default { Job, TitleContainer, Date, DateSegment, TimeAgo, Description, Label, Roles, Role, Projects, ProjectContainer };

@@ -5,7 +5,7 @@ exports[`Label default props should match the snapshot 1`] = `
   font-size: 0.8661336772616117em;
   line-height: 1.776889em;
   color: #0d5189;
-  background-color: rgba(13,81,137,0.05);
+  background-color: rgba(13,81,137,0.1);
   border-radius: 1em;
   padding: 0.25em 1em;
   font-weight: 400;

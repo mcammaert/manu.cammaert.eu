@@ -2,41 +2,52 @@
 
 exports[`ThemeSwitcher default props should match the snapshot 1`] = `
 .c3 {
-  border: none;
-  margin: 0;
-  padding: 0;
-  width: auto;
-  overflow: visible;
-  font: inherit;
-  line-height: normal;
-  -webkit-font-smoothing: inherit;
-  -moz-osx-font-smoothing: inherit;
-  -webkit-appearance: none;
   -webkit-text-decoration: none;
   text-decoration: none;
-  display: block;
-  padding: 1em;
   font-size: 1em;
+  font-weight: 400;
+  padding: 0.5627813555039173em 0.7501875468867217em;
+  color: #F6F7F9;
+  background: #0d5189;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 1px 18px rgba(30,32,37,0.08);
+  opacity: 0.8;
   -webkit-transition: all 200ms;
   transition: all 200ms;
-  font-weight: 400;
+  -webkit-appearance: initial;
+  padding: 1em;
+  font-size: 1em;
   color: #262830;
   background: #FCFCFC;
 }
 
 .c3:hover:enabled {
+  opacity: 1;
   cursor: pointer;
-  box-shadow: 0 1px 18px rgba(38,40,48,0.08);
+  box-shadow: 0 1px 18px rgba(30,32,37,0.25);
 }
 
 .c3:active {
-  color: #FCFCFC;
-  background: #262830;
+  color: #0d5189;
+  background: #F6F7F9;
 }
 
 .c3:disabled {
+  opacity: 0.75;
   cursor: default;
-  color: #F4F5F7;
+  color: #F6F7F9;
+  background: #0d5189;
+}
+
+.c3:active {
+  color: #F6F7F9;
+  background: #0d5189;
+}
+
+.c3:disabled {
+  color: #F6F7F9;
   background: #0d5189;
 }
 

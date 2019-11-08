@@ -52,7 +52,7 @@ exports[`Resume default props should match the snapshot 1`] = `
 
 .c3 {
   width: 100vw;
-  max-width: 800px;
+  max-width: 960px;
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
   margin-top: 0;
@@ -61,7 +61,7 @@ exports[`Resume default props should match the snapshot 1`] = `
 
 .c4 {
   font-size: 1.776889em;
-  line-height: 1em;
+  line-height: 1.333em;
   font-weight: 200;
   color: #262830;
   margin: 0;
@@ -70,7 +70,7 @@ exports[`Resume default props should match the snapshot 1`] = `
 
 .c6 {
   font-size: 1em;
-  line-height: 1em;
+  line-height: 1.333em;
   font-weight: 200;
   color: #262830;
   margin: 0;
@@ -275,11 +275,11 @@ exports[`Resume default props should match the snapshot 1`] = `
             >
               Loopbaan
             </h2>
+            <div
+              class="c8"
+            />
           </div>
         </div>
-        <div
-          class="c8"
-        />
       </main>
       <footer
         class="c9"

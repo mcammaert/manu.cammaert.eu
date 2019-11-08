@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { rgba, modularScale } from 'polished';
+import { modularScale } from 'polished';
 
 import { NavigationItem } from 'components/atoms/NavigationItem';
 

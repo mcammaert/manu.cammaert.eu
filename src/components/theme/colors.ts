@@ -32,7 +32,7 @@ export const colors = {
   gray: '#989DAC',
   smoke: '#BEC2C9',
   fog: '#EDEEF0',
-  white: '#F4F5F7',
+  white: '#F6F7F9',
   snow: '#FCFCFC',
 
   // slate

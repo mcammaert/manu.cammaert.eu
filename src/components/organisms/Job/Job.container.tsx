@@ -1,15 +1,18 @@
-import React from 'react';
-
-// import { useLocation } from 'react-router-dom';
+import React, { useState } from 'react';
 
 import { getJob } from 'api/resume';
 import Job from './Job';
 
 import { JobContainerProps } from './Job.types';
 
-const JobContainer: React.FC<JobContainerProps> = ({ id, headerLevel }) => {
-  // const location = useLocation();
+const JobContainer: React.FC<JobContainerProps> = ({ id, headerLevel, className }) => {
   const job = getJob(id);
+
+  const [displayProjects, setDisplayProjects] = useState<boolean>(false);
+
+  const onToggleProjectsHandler = () => {
+    setDisplayProjects(!displayProjects);
+  };
   if (job) {
     const { client, description, startDate, endDate, roles, projects } = job;
     // const regex = new RegExp(`^/cv/${id}`, 'i');
@@ -26,6 +29,9 @@ const JobContainer: React.FC<JobContainerProps> = ({ id, headerLevel }) => {
         projects={projects}
         displayProjects
         headerLevel={headerLevel}
+        compact={!displayProjects}
+        className={className}
+        toggleProjectsHandler={onToggleProjectsHandler}
       />
     );
   }

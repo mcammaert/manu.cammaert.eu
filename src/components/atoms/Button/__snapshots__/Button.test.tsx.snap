@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NavigationItem default props should match the snapshot 1`] = `
+exports[`Button default props should match the snapshot 1`] = `
 .c0 {
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -17,10 +17,6 @@ exports[`NavigationItem default props should match the snapshot 1`] = `
   -webkit-transition: all 200ms;
   transition: all 200ms;
   -webkit-appearance: initial;
-  padding: 1em;
-  font-size: 1em;
-  color: #262830;
-  background: #FCFCFC;
 }
 
 .c0:hover:enabled {
@@ -41,19 +37,10 @@ exports[`NavigationItem default props should match the snapshot 1`] = `
   background: #0d5189;
 }
 
-.c0:active {
-  color: #F6F7F9;
-  background: #0d5189;
-}
-
-.c0:disabled {
-  color: #F6F7F9;
-  background: #0d5189;
-}
-
 <div>
   <button
     class="c0"
+    type="button"
   />
 </div>
 `;

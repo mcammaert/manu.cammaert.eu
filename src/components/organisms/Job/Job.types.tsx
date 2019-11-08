@@ -11,9 +11,14 @@ export interface JobProps {
   projects?: Array<{ name: string }>;
   displayProjects?: boolean;
   headerLevel?: number;
+  compact?: boolean;
+  className?: string;
+  toggleProjectsHandler: () => void;
 }
 
 export interface JobContainerProps {
   id: string;
   headerLevel?: number;
+  compact?: boolean;
+  className?: string;
 }

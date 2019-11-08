@@ -2,8 +2,10 @@ import React from 'react';
 
 import moment from 'moment';
 import 'moment/locale/nl-be';
+import { useSpring } from 'react-spring';
+import { useMeasure } from 'react-use';
 
-import { Container } from 'components/atoms/Container';
+import { Button } from 'components/atoms/Button';
 import { ScreenReaderOnly } from 'components/atoms/ScreenReaderOnly';
 import { ProjectContainer } from 'components/organisms/Project';
 
@@ -23,9 +25,24 @@ const Job: React.FC<JobProps> = ({
   projects,
   displayProjects = false,
   headerLevel = 1,
-}) => (
-  <Container>
-    <S.Job>
+  compact = false,
+  className,
+  toggleProjectsHandler,
+}) => {
+  const [collapseContent, { height: contentHeight }] = useMeasure();
+
+  const projectsAnimation = useSpring({
+    from: { height: 0, opacity: 0 },
+    to: { height: !compact ? contentHeight : 0, opacity: !compact ? 1 : 0 },
+  });
+
+  const years = moment(endDate).diff(startDate, 'years');
+  const months = moment(endDate)
+    .subtract(years, 'years')
+    .diff(startDate, 'months');
+
+  return (
+    <S.Job className={className}>
       <S.TitleContainer>
         <Title size={2} header={headerLevel}>
           {client}
@@ -46,8 +63,10 @@ const Job: React.FC<JobProps> = ({
       <S.Date as="span">
         {endDate && (
           <>
-            <S.DateSegment>{`Van ${moment(startDate).format('LL')}`}</S.DateSegment>
-            <S.DateSegment>{` tot ${moment(endDate).format('LL')}`}</S.DateSegment>
+            <S.DateSegment>
+              {`Van ${moment(startDate).format('LL')}`}
+              {` tot ${moment(endDate).format('LL')}`}
+            </S.DateSegment>
           </>
         )}
         {!endDate && (
@@ -55,6 +74,11 @@ const Job: React.FC<JobProps> = ({
             Sinds <S.DateSegment>{moment(startDate).format('LL')}</S.DateSegment>
           </>
         )}
+        <S.TimeAgo>
+          ({years > 0 && `${years} jaar`}
+          {years > 0 && months > 0 && <span> en </span>}
+          {months > 0 && `${months} ${months === 1 ? 'maand' : 'maanden'}`})
+        </S.TimeAgo>
       </S.Date>
       {description && (
         <>
@@ -69,13 +93,18 @@ const Job: React.FC<JobProps> = ({
           <ScreenReaderOnly>
             <Title header={headerLevel + 1}>Projecten</Title>
           </ScreenReaderOnly>
-          {projects.map(({ name }) => (
-            <ProjectContainer key={name} client={id} project={name} headerLevel={headerLevel + 1} />
-          ))}
+          <Button onClick={toggleProjectsHandler}>{compact ? 'Toon projecten' : 'Verberg projecten'}</Button>
+          <S.Projects style={projectsAnimation}>
+            <S.ProjectContainer ref={collapseContent}>
+              {projects.map(({ name }) => (
+                <ProjectContainer key={name} client={id} project={name} headerLevel={headerLevel + 1} visible={!compact} />
+              ))}
+            </S.ProjectContainer>
+          </S.Projects>
         </>
       )}
     </S.Job>
-  </Container>
-);
+  );
+};
 
 export default Job;

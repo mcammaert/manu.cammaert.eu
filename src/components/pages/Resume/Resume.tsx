@@ -14,7 +14,6 @@ import S from './Resume.style';
 
 const Resume: React.FC<ResumeProps> = ({
   jobs,
-  personal,
   skills,
   technical,
   software,
@@ -136,12 +135,14 @@ const Resume: React.FC<ResumeProps> = ({
             <Title size={2} header={2}>
               Loopbaan
             </Title>
+            <S.Jobs>
+              {jobs.map(({ id }) => (
+                <S.Job key={id}>
+                  <JobContainer id={id} headerLevel={3} compact />
+                </S.Job>
+              ))}
+            </S.Jobs>
           </Container>
-          <S.Jobs>
-            {jobs.map(({ id }) => (
-              <JobContainer key={id} id={id} headerLevel={3} />
-            ))}
-          </S.Jobs>
         </main>
       </Default>
     </S.Resume>

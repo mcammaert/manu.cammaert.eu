@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { modularScale } from 'polished';
+import { modularScale, rgba } from 'polished';
 
 export const Resume = styled.div`
   position: absolute;
@@ -11,13 +11,20 @@ export const LabelList = styled.ul`
 
 export const LabelListItem = styled.li`
   display: inline-block;
-  margin-bottom: ${modularScale(-3)};
+  margin-bottom: ${modularScale(-1)};
   line-height: ${modularScale(2)};
-  margin-right: ${modularScale(-3)};
+  margin-right: ${modularScale(-2)};
 `;
 
 export const Jobs = styled.div`
   margin-top: ${modularScale(1)};
 `;
 
-export default { Resume, LabelList, LabelListItem, Jobs };
+export const Job = styled.div`
+  border-top: 1px solid ${({ theme }) => rgba(theme.colors.primary, 0.08)};
+  margin-top: ${modularScale(0)};
+  padding-top: ${modularScale(2)};
+  margin-bottom: ${modularScale(0)};
+`;
+
+export default { Resume, LabelList, LabelListItem, Jobs, Job };

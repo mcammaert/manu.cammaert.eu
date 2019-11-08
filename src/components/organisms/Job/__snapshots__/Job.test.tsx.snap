@@ -1,31 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Job default props should match the snapshot 1`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-bottom: 0;
-}
-
-.c1 {
-  width: 100vw;
-  max-width: 800px;
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
 .c6 {
   position: absolute;
   left: -10000px;
@@ -43,9 +18,9 @@ exports[`Job default props should match the snapshot 1`] = `
   margin-bottom: 0;
 }
 
-.c4 {
+.c2 {
   font-size: 1.776889em;
-  line-height: 1em;
+  line-height: 1.333em;
   font-weight: 200;
   color: #262830;
   margin: 0;
@@ -54,38 +29,36 @@ exports[`Job default props should match the snapshot 1`] = `
 
 .c7 {
   font-size: 1.333em;
-  line-height: 1em;
+  line-height: 1.333em;
   font-weight: 200;
   color: #262830;
   margin: 0;
   margin-bottom: 0.4221915645190677em;
 }
 
-.c2 {
-  margin-bottom: 3.1573345183209995em;
+.c0 {
   position: relative;
 }
 
-.c2:before {
-  content: '';
-  position: absolute;
-  width: 0.9375rem;
-  height: 4px;
-  top: -0.5627813555039173em;
-  left: -0.9375rem;
-  background-color: #d35239;
-}
-
-.c3 {
+.c1 {
   margin-bottom: 1em;
 }
 
-.c5 {
+.c3 {
   font-size: 1em;
+  line-height: 1.776889em;
   font-weight: 400;
   color: #262830;
   margin-bottom: 1.776889em;
   display: block;
+}
+
+.c4 {
+  margin-right: 0.4221915645190677em;
+}
+
+.c5 {
+  display: inline-block;
 }
 
 .c9 {
@@ -100,50 +73,44 @@ exports[`Job default props should match the snapshot 1`] = `
     <div
       class="c1"
     >
-      <div
+      <h1
         class="c2"
+        size="2"
       >
-        <div
-          class="c3"
-        >
-          <h1
-            class="c4"
-            size="2"
-          >
-            Lorem ipsum
-          </h1>
-        </div>
-        <span
-          class="c5"
-        >
-          <span
-            class=""
-          >
-            Van 18 oktober 2019
-          </span>
-          <span
-            class=""
-          >
-             tot 20 oktober 2019
-          </span>
-        </span>
-        <div
-          class="c6"
-        >
-          <h2
-            class="c7"
-            size="1"
-          >
-            Omschrijving
-          </h2>
-        </div>
-        <div
-          class="c8 c9"
-          font-weight="200"
-        >
-          Lorem ipsum dolor sit amet
-        </div>
-      </div>
+        Lorem ipsum
+      </h1>
+    </div>
+    <span
+      class="c3"
+    >
+      <span
+        class="c4"
+      >
+        Van 18 oktober 2019
+         tot 20 oktober 2019
+      </span>
+      <span
+        class="c5"
+      >
+        (
+        )
+      </span>
+    </span>
+    <div
+      class="c6"
+    >
+      <h2
+        class="c7"
+        size="1"
+      >
+        Omschrijving
+      </h2>
+    </div>
+    <div
+      class="c8 c9"
+      font-weight="200"
+    >
+      Lorem ipsum dolor sit amet
     </div>
   </div>
 </div>

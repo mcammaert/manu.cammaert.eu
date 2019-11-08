@@ -6,11 +6,10 @@ import pMinDelay from 'p-min-delay';
 import { useTransition, animated } from 'react-spring';
 
 import { Header } from 'components/organisms/Header';
-
 import { Loading as LoadingComponent } from 'components/molecules/Loading';
 import { Container } from 'components/atoms/Container';
-
 import { Error as ErrorPage } from 'components/pages/Error';
+
 import { RouterProps } from './Router.types';
 
 const fallbackTimeout = 20;
@@ -47,8 +46,8 @@ const Router: React.FC<RouterProps> = () => {
       {transitions.map(({ item, props, key }) => (
         <animated.div key={key} style={props}>
           <Switch location={item}>
-            <Route path="/cv" component={Resume} />
-            <Route path="/contact" component={Contact} />
+            <Route path="/cv" exact component={Resume} />
+            <Route path="/contact" exact component={Contact} />
             <Route path="/" exact component={Home} />
             <Route path="*" component={PageNotFound} />
           </Switch>

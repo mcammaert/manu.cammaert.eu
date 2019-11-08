@@ -5,14 +5,17 @@ import { Copy } from 'components/atoms/Copy';
 import { Title as TitleComponent } from 'components/atoms/Title';
 
 export const Project = styled.div`
-  border-top: 1px solid ${({ theme }) => rgba(theme.colors.primary, 0.08)};
+  background-color: ${({ theme }) => rgba(theme.colors.primary, 0.025)};
+
   margin-top: ${modularScale(0)};
-  padding-top: ${modularScale(0)};
-  margin-bottom: ${modularScale(0)};
+  padding: ${modularScale(0)} ${modularScale(-1)};
+  margin-bottom: ${modularScale(-1)};
+  border-radius: 4px;
 `;
 
 export const Title = styled(TitleComponent)`
   color: ${({ theme }) => theme.colors.secondary};
+  margin-bottom: 0;
 `;
 
 export const Roles = styled.ul`
@@ -54,9 +57,7 @@ export const Technology = styled.span`
 `;
 
 export const References = styled.span`
-  margin-left: ${({ theme }) => rem(theme.margin)};
   padding: 0;
-  margin-bottom: ${modularScale(1)};
   line-height: ${modularScale(3)};
 `;
 
@@ -64,9 +65,12 @@ export const Reference = styled.span`
   list-style: none;
   font-size: ${modularScale(0)};
   color: ${({ theme }) => theme.colors.secondary};
-  margin-right: ${modularScale(0)};
-  border-radius: 5px;
+
   font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 80%;
 `;
 
 export default { Project, Title, Roles, Role, Description, Technologies, Technology, References, Reference };
