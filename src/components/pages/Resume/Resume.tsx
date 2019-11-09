@@ -13,6 +13,7 @@ import { ResumeProps } from './Resume.types';
 import S from './Resume.style';
 
 const Resume: React.FC<ResumeProps> = ({
+  personal: { name, nationality, address, email },
   jobs,
   skills,
   technical,
@@ -30,6 +31,16 @@ const Resume: React.FC<ResumeProps> = ({
             <Title size={2} header={2}>
               Persoonlijke gegevens
             </Title>
+            <S.DescriptionList>
+              <S.DescriptionListTerm>Naam</S.DescriptionListTerm>
+              <S.DescriptionListDescription>{name}</S.DescriptionListDescription>
+              <S.DescriptionListTerm>Nationaliteit</S.DescriptionListTerm>
+              <S.DescriptionListDescription>{nationality}</S.DescriptionListDescription>
+              <S.DescriptionListTerm>Adres</S.DescriptionListTerm>
+              <S.DescriptionListDescription>{address}</S.DescriptionListDescription>
+              <S.DescriptionListTerm>E-mail</S.DescriptionListTerm>
+              <S.DescriptionListDescription>{email}</S.DescriptionListDescription>
+            </S.DescriptionList>
           </Container>
           <Container margin>
             <Title size={2} header={2}>

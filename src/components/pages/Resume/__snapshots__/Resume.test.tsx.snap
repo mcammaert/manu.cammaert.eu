@@ -5,14 +5,14 @@ exports[`Resume default props should match the snapshot 1`] = `
   width: 100vw;
 }
 
-.c9 {
+.c11 {
   position: absolute;
   padding-top: 3.1573345183209995em;
   padding-bottom: 3.1573345183209995em;
   width: 100vw;
 }
 
-.c11 {
+.c13 {
   color: rgba(38,40,48,0.6);
   font-size: 0.8060785933275142em;
   line-height: 1.776889em;
@@ -34,7 +34,7 @@ exports[`Resume default props should match the snapshot 1`] = `
   margin-bottom: 1.333em;
 }
 
-.c10 {
+.c12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -68,7 +68,7 @@ exports[`Resume default props should match the snapshot 1`] = `
   margin-bottom: 0.4221915645190677em;
 }
 
-.c6 {
+.c8 {
   font-size: 1em;
   line-height: 1.333em;
   font-weight: 200;
@@ -77,12 +77,12 @@ exports[`Resume default props should match the snapshot 1`] = `
   margin-bottom: 0.4221915645190677em;
 }
 
-.c7 {
+.c9 {
   width: 100%;
   margin-bottom: 1em;
 }
 
-.c7 th {
+.c9 th {
   font-size: 0.7501875468867217em;
   text-align: left;
   padding: 0.5627813555039173em;
@@ -90,7 +90,7 @@ exports[`Resume default props should match the snapshot 1`] = `
   text-transform: uppercase;
 }
 
-.c7 td {
+.c9 td {
   font-size: 1em;
   border-top: 1px solid rgba(38,40,48,0.08);
   padding: 0.5627813555039173em;
@@ -102,10 +102,26 @@ exports[`Resume default props should match the snapshot 1`] = `
 }
 
 .c5 {
+  font-size: 1em;
+  line-height: 1.333em;
+  font-weight: 200;
+  margin-bottom: 0.5627813555039173em;
+  color: #0d5189;
+}
+
+.c6 {
+  font-size: 1.333em;
+  line-height: 1.333em;
+  font-weight: 200;
+  margin-bottom: 1.333em;
+  margin-left: 0;
+}
+
+.c7 {
   padding: 0;
 }
 
-.c8 {
+.c10 {
   margin-top: 1.333em;
 }
 
@@ -129,6 +145,50 @@ exports[`Resume default props should match the snapshot 1`] = `
             >
               Persoonlijke gegevens
             </h2>
+            <dl
+              class=""
+            >
+              <dt
+                class="c5"
+              >
+                Naam
+              </dt>
+              <dd
+                class="c6"
+              >
+                name
+              </dd>
+              <dt
+                class="c5"
+              >
+                Nationaliteit
+              </dt>
+              <dd
+                class="c6"
+              >
+                nationality
+              </dd>
+              <dt
+                class="c5"
+              >
+                Adres
+              </dt>
+              <dd
+                class="c6"
+              >
+                address
+              </dd>
+              <dt
+                class="c5"
+              >
+                E-mail
+              </dt>
+              <dd
+                class="c6"
+              >
+                email
+              </dd>
+            </dl>
           </div>
         </div>
         <div
@@ -144,7 +204,7 @@ exports[`Resume default props should match the snapshot 1`] = `
               Vaardigheden
             </h2>
             <ul
-              class="c5"
+              class="c7"
             />
           </div>
         </div>
@@ -161,7 +221,7 @@ exports[`Resume default props should match the snapshot 1`] = `
               Technologiën
             </h2>
             <ul
-              class="c5"
+              class="c7"
             />
           </div>
         </div>
@@ -178,7 +238,7 @@ exports[`Resume default props should match the snapshot 1`] = `
               Software
             </h2>
             <ul
-              class="c5"
+              class="c7"
             />
           </div>
         </div>
@@ -195,20 +255,20 @@ exports[`Resume default props should match the snapshot 1`] = `
               Opleidingen en training
             </h2>
             <h3
-              class="c6"
+              class="c8"
             >
               Opleidingen
             </h3>
             <ul
-              class="c5"
+              class="c7"
             />
             <h3
-              class="c6"
+              class="c8"
             >
               Training
             </h3>
             <ul
-              class="c5"
+              class="c7"
             />
           </div>
         </div>
@@ -225,7 +285,7 @@ exports[`Resume default props should match the snapshot 1`] = `
               Talen
             </h2>
             <table
-              class="c7"
+              class="c9"
             >
               <thead>
                 <tr>
@@ -259,7 +319,7 @@ exports[`Resume default props should match the snapshot 1`] = `
               Hobbies
             </h2>
             <ul
-              class="c5"
+              class="c7"
             />
           </div>
         </div>
@@ -276,22 +336,22 @@ exports[`Resume default props should match the snapshot 1`] = `
               Loopbaan
             </h2>
             <div
-              class="c8"
+              class="c10"
             />
           </div>
         </div>
       </main>
       <footer
-        class="c9"
+        class="c11"
       >
         <div
-          class="c10"
+          class="c12"
         >
           <div
             class="c3"
           >
             <div
-              class="c11"
+              class="c13"
             >
               Copyright © 
               2019
