@@ -36,7 +36,7 @@ const Resume: React.FC<ResumeProps> = ({
               <S.DescriptionListDescription>{name}</S.DescriptionListDescription>
               <S.DescriptionListTerm>Nationaliteit</S.DescriptionListTerm>
               <S.DescriptionListDescription>{nationality}</S.DescriptionListDescription>
-              <S.DescriptionListTerm>Adres</S.DescriptionListTerm>
+              <S.DescriptionListTerm>Woonplaats</S.DescriptionListTerm>
               <S.DescriptionListDescription>{address}</S.DescriptionListDescription>
               <S.DescriptionListTerm>E-mail</S.DescriptionListTerm>
               <S.DescriptionListDescription>{email}</S.DescriptionListDescription>
