@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { Default } from 'components/templates/Default';
 import { Container } from 'components/atoms/Container';
 import { JobContainer } from 'components/organisms/Job';

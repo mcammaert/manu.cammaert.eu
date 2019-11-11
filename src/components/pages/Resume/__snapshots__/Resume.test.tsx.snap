@@ -171,7 +171,7 @@ exports[`Resume default props should match the snapshot 1`] = `
               <dt
                 class="c5"
               >
-                Adres
+                Woonplaats
               </dt>
               <dd
                 class="c6"
