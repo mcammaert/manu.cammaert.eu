@@ -19,4 +19,30 @@ describe('Project', () => {
       expect(container).toMatchSnapshot();
     });
   });
+
+  describe('all props', () => {
+    it('should match the snapshot', () => {
+      const component = (
+        <Project
+          name="Lorem ipsum"
+          description="Lorem imsum dolor sit amet"
+          technologies={['lorem', 'ipsum', 'dolor']}
+          references={['lorem', 'ipsum', 'dolor']}
+          roles={['lorem', 'ipsum', 'dolor']}
+          headerLevel={3}
+          visible
+        />
+      );
+      const { container } = renderComponent({ theme: lightTheme, component });
+      expect(container).toMatchSnapshot();
+    });
+  });
+
+  describe('visibility', () => {
+    it('should match the snapshot', () => {
+      const component = <Project name="Lorem ipsum" visible={false} />;
+      const { container } = renderComponent({ theme: lightTheme, component });
+      expect(container).toMatchSnapshot();
+    });
+  });
 });

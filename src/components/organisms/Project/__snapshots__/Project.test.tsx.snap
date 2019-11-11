@@ -1,6 +1,294 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Project all props should match the snapshot 1`] = `
+.c3 {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.c8 {
+  font-size: 0.8661336772616117em;
+  line-height: 1.776889em;
+  color: #0d5189;
+  background-color: rgba(13,81,137,0.1);
+  border-radius: 1em;
+  padding: 0.25em 1em;
+  font-weight: 400;
+  box-shadow: 0 1px 6px rgba(13,81,137,0.01);
+}
+
+.c1 {
+  font-size: 1.333em;
+  line-height: 1.333em;
+  font-weight: 200;
+  color: #262830;
+  margin: 0;
+  margin-bottom: 0.4221915645190677em;
+}
+
+.c9 {
+  font-size: 1em;
+  font-weight: 200;
+  line-height: 1.776889em;
+  color: #262830;
+  margin-bottom: 0;
+}
+
+.c0 {
+  background-color: rgba(38,40,48,0.025);
+  margin-top: 1em;
+  padding: 1em 0.7501875468867217em;
+  margin-bottom: 0.7501875468867217em;
+  border-radius: 4px;
+}
+
+.c2 {
+  color: #0d5189;
+  margin-bottom: 0;
+}
+
+.c4 {
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1.333em;
+}
+
+.c5 {
+  font-size: 1em;
+  line-height: 1.333em;
+  display: inline-block;
+}
+
+.c5:after {
+  content: '/';
+  padding-left: 0.3167228541028265em;
+  padding-right: 0.3167228541028265em;
+}
+
+.c5:last-child:after {
+  content: '';
+  padding: 0;
+}
+
+.c10 {
+  white-space: pre-line;
+  margin-top: 0.9375rem;
+}
+
+.c6 {
+  padding: 0;
+}
+
+.c7 {
+  display: inline-block;
+  line-height: 1.776889em;
+  margin-right: 0.4221915645190677em;
+  margin-bottom: 0.4221915645190677em;
+}
+
+.c11 {
+  padding: 0;
+  line-height: 2.3685930369999997em;
+}
+
+.c12 {
+  list-style: none;
+  font-size: 1em;
+  color: #0d5189;
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 90%;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <h3
+      class="c1 c2"
+      size="1"
+    >
+      Lorem ipsum
+    </h3>
+    <div
+      class="c3"
+    >
+      <h4
+        class="c1"
+        size="1"
+      >
+        Rollen
+      </h4>
+    </div>
+    <ul
+      class="c4"
+    >
+      <li
+        class="c5"
+      >
+        lorem
+      </li>
+      <li
+        class="c5"
+      >
+        ipsum
+      </li>
+      <li
+        class="c5"
+      >
+        dolor
+      </li>
+    </ul>
+    <div
+      class="c3"
+    >
+      <h4
+        class="c1"
+        size="1"
+      >
+        Technologiën
+      </h4>
+    </div>
+    <ul
+      class="c6"
+    >
+      <li
+        class="c7"
+      >
+        <div
+          class="c8"
+        >
+          lorem
+        </div>
+      </li>
+      <li
+        class="c7"
+      >
+        <div
+          class="c8"
+        >
+          ipsum
+        </div>
+      </li>
+      <li
+        class="c7"
+      >
+        <div
+          class="c8"
+        >
+          dolor
+        </div>
+      </li>
+    </ul>
+    <div
+      class="c3"
+    >
+      <h4
+        class="c1"
+        size="1"
+      >
+        Omschrijving
+      </h4>
+    </div>
+    <div
+      class="c9 c10"
+      font-weight="200"
+    >
+      Lorem imsum dolor sit amet
+    </div>
+    <div
+      class="c3"
+    >
+      <h4
+        class="c1"
+        size="1"
+      >
+        Rollen
+      </h4>
+    </div>
+    <ul
+      class="c11"
+    >
+      <li
+        class="c12"
+      >
+        <a
+          href="lorem"
+          tabindex="0"
+        >
+          lorem
+        </a>
+      </li>
+      <li
+        class="c12"
+      >
+        <a
+          href="ipsum"
+          tabindex="0"
+        >
+          ipsum
+        </a>
+      </li>
+      <li
+        class="c12"
+      >
+        <a
+          href="dolor"
+          tabindex="0"
+        >
+          dolor
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
 exports[`Project default props should match the snapshot 1`] = `
+.c1 {
+  font-size: 1.333em;
+  line-height: 1.333em;
+  font-weight: 200;
+  color: #262830;
+  margin: 0;
+  margin-bottom: 0.4221915645190677em;
+}
+
+.c0 {
+  background-color: rgba(38,40,48,0.025);
+  margin-top: 1em;
+  padding: 1em 0.7501875468867217em;
+  margin-bottom: 0.7501875468867217em;
+  border-radius: 4px;
+}
+
+.c2 {
+  color: #0d5189;
+  margin-bottom: 0;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <h2
+      class="c1 c2"
+      size="1"
+    >
+      Lorem ipsum
+    </h2>
+  </div>
+</div>
+`;
+
+exports[`Project visibility should match the snapshot 1`] = `
 .c1 {
   font-size: 1.333em;
   line-height: 1.333em;
