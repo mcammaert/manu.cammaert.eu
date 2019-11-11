@@ -3,13 +3,15 @@
     "name": "Manu Cammaert",
     "nationality": "Belg",
     "birthDate": "1976-02-16",
+    "phone": "+32 (0)485 53 43 36",
     "address": "Stekene, België",
     "email": "manu@cammaert.eu"
   },
   "links": [
-    { "type": "github", "name": "GitHub", "uri": "hhttps://github.com/mcammaert" },
+    { "type": "github", "name": "GitHub", "uri": "https://github.com/mcammaert" },
     { "type": "linkedin", "name": "LinkedIn", "uri": "https://www.linkedin.com/in/manucammaert" },
-    { "type": "facebook", "name": "FaceBook", "uri": "https://www.facebook.com/manu.cammaert" }
+    { "type": "facebook", "name": "FaceBook", "uri": "https://www.facebook.com/manu.cammaert" },
+    { "type": "keybase", "name": "Keybase", "uri": "https://keybase.io/mancam" }
   ],
   "skills": [
     "Front-end design/development",

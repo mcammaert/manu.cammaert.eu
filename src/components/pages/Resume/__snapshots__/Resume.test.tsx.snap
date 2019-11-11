@@ -110,7 +110,7 @@ exports[`Resume default props should match the snapshot 1`] = `
 }
 
 .c6 {
-  font-size: 1.333em;
+  font-size: 1em;
   line-height: 1.333em;
   font-weight: 200;
   margin-bottom: 1.333em;

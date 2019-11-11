@@ -16,7 +16,7 @@ export const DescriptionListTerm = styled.dt`
 `;
 
 export const DescriptionListDescription = styled.dd`
-  font-size: ${modularScale(1)};
+  font-size: ${modularScale(0)};
   line-height: ${modularScale(1)};
   font-weight: 200;
   margin-bottom: ${modularScale(1)};

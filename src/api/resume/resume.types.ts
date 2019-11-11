@@ -42,8 +42,17 @@ export interface Personal {
   nationality: string;
   birthDate: string;
   address: string;
+  phone: string;
   email: string;
 }
+
+export interface Link {
+  type: string;
+  name: string;
+  uri: string;
+}
+
+export type Links = Array<Link>;
 
 export interface Project {
   name: string;
@@ -72,6 +81,7 @@ export type Jobs = Array<Job>;
 
 export interface Resume {
   personal: Personal;
+  links: Links;
   skills: Skills;
   technical: Technologies;
   software: Software;

@@ -16,7 +16,14 @@ describe('Resume', () => {
       const component = (
         <Resume
           jobs={[]}
-          personal={{ name: 'name', nationality: 'nationality', birthDate: '2000-01-01', address: 'address', email: 'email' }}
+          personal={{
+            name: 'name',
+            nationality: 'nationality',
+            birthDate: '2000-01-01',
+            address: 'address',
+            email: 'email',
+            phone: '+32 485 00 00 00',
+          }}
           skills={[]}
           technical={[]}
           software={[]}

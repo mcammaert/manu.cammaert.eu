@@ -1,8 +1,23 @@
 import resume from 'data/resume.json';
 
-import { Personal, Skills, Technologies, Software, Educations, Trainings, Languages, Hobbies, Jobs, Job, Project } from './resume.types';
+import {
+  Personal,
+  Links,
+  Skills,
+  Technologies,
+  Software,
+  Educations,
+  Trainings,
+  Languages,
+  Hobbies,
+  Jobs,
+  Job,
+  Project,
+} from './resume.types';
 
 export const getPersonal = (): Personal => resume.personal;
+
+export const getLinks = (): Links => resume.links;
 
 export const getAllSkills = (): Skills => resume.skills;
 
@@ -30,6 +45,7 @@ export const getProject = (client: string, projectName: string): Project | undef
 
 export default {
   getPersonal,
+  getLinks,
   getAllSkills,
   getAllTechnical,
   getAllSoftware,

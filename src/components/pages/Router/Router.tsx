@@ -26,7 +26,7 @@ const Home = loadable(() => pMinDelay(import('components/pages/Home/Home'), fall
 const Resume = loadable(() => pMinDelay(import('components/pages/Resume/Resume.container'), fallbackTimeout), {
   fallback: <Loading />,
 });
-const Contact = loadable(() => pMinDelay(import('components/pages/Contact/Contact'), fallbackTimeout), {
+const Contact = loadable(() => pMinDelay(import('components/pages/Contact/Contact.container'), fallbackTimeout), {
   fallback: <Loading />,
 });
 const PageNotFound = () => <ErrorPage message="Pagina niet gevonden." />;
