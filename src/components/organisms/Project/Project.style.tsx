@@ -54,6 +54,7 @@ export const Technology = styled.span`
   display: inline-block;
   line-height: ${modularScale(2)};
   margin-right: ${modularScale(-3)};
+  margin-bottom: ${modularScale(-3)};
 `;
 
 export const References = styled.span`
