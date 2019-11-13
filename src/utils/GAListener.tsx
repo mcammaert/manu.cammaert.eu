@@ -18,7 +18,9 @@ const GAListener = ({ children, trackingId }: Props): JSX.Element => {
 
   useEffect((): UnregisterCallback | void => {
     if (trackingId) {
-      ReactGA.initialize(trackingId);
+      ReactGA.initialize(trackingId, {
+        testMode: process.env.NODE_ENV !== 'production',
+      });
       sendPageView(history.location, 'REPLACE');
       return history.listen(sendPageView);
     }
