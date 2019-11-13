@@ -1,4 +1,7 @@
 import React from 'react';
+
+import { Helmet } from 'react-helmet';
+
 import { Default } from 'components/templates/Default';
 import { Container } from 'components/atoms/Container';
 import { JobContainer } from 'components/organisms/Job';
@@ -24,6 +27,9 @@ const Resume: React.FC<ResumeProps> = ({
 }) => {
   return (
     <S.Resume>
+      <Helmet>
+        <title>CV | Manu Cammaert</title>
+      </Helmet>
       <Default>
         <main>
           <Container margin>

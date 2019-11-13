@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { Helmet } from 'react-helmet';
 import { SocialIcon } from 'react-social-icons';
 
 import { Container } from 'components/atoms/Container';
@@ -12,6 +13,9 @@ import S from './Contact.style';
 
 const Contact: React.FC<ContactProps> = ({ personal: { name, address, phone, email }, links }) => (
   <S.Contact>
+    <Helmet>
+      <title>Contact | Manu Cammaert</title>
+    </Helmet>
     <Default>
       <Container>
         <Title size={2} header={2}>
