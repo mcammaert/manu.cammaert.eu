@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+
 import { BrowserRouter } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import { useCookies } from 'react-cookie';
@@ -6,6 +7,7 @@ import { useMedia } from 'react-use';
 
 import { lightTheme, darkTheme, GlobalStyle } from 'components/theme';
 
+import GAListener from 'utils/GAListener';
 import { Router } from 'components/pages/Router';
 
 const App: React.FC = () => {
@@ -32,7 +34,9 @@ const App: React.FC = () => {
       <>
         <GlobalStyle light={theme !== 'dark'} />
         <BrowserRouter>
-          <Router />
+          <GAListener trackingId="UA-152346983-1">
+            <Router />
+          </GAListener>
         </BrowserRouter>
       </>
     </ThemeProvider>
